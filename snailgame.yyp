@@ -35,12 +35,16 @@
   },
   "name":"snailgame",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_snail","path":"objects/obj_snail/obj_snail.yy",},},
+    {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
+    {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
+    {"id":{"name":"spr_snail","path":"sprites/spr_snail/spr_snail.yy",},},
+    {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
