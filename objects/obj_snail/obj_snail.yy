@@ -8,8 +8,8 @@
   "name":"obj_snail",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Snails",
+    "path":"folders/Objects/Snails.yy",
   },
   "parentObjectId":null,
   "persistent":false,
