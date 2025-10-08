@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block_parent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_snail","path":"objects/obj_snail/obj_snail.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_block",
+  "eventList":[],
   "managed":true,
-  "name":"obj_block_parent",
+  "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Block",
     "path":"folders/Objects/Block.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_block_parent",
+    "path":"objects/obj_block_parent/obj_block_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
