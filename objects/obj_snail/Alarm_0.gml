@@ -1,0 +1,1 @@
+moveSpeed = moveSpeed / 2
