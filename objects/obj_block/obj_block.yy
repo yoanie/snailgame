@@ -6,12 +6,12 @@
   "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pushables",
-    "path":"folders/Objects/Pushables.yy",
+    "name":"Block",
+    "path":"folders/Objects/Block.yy",
   },
   "parentObjectId":{
-    "name":"obj_pushable_parent",
-    "path":"objects/obj_pushable_parent/obj_pushable_parent.yy",
+    "name":"obj_block_parent",
+    "path":"objects/obj_block_parent/obj_block_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

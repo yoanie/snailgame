@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_block_parent",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_snail","path":"objects/obj_snail/obj_snail.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_block_parent",
   "overriddenProperties":[],

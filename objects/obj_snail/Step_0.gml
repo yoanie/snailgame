@@ -1,8 +1,8 @@
 ///@description move player
 draw_set_alpha(1);
 
-var xVelocity = 2 * (keyboard_check(vk_right) - keyboard_check(vk_left));
-var yVelocity = 2 * (keyboard_check(vk_down) - keyboard_check(vk_up))
+var xVelocity = moveSpeed * (keyboard_check(vk_right) - keyboard_check(vk_left));
+var yVelocity = moveSpeed * (keyboard_check(vk_down) - keyboard_check(vk_up))
 
 x += xVelocity;
 y += yVelocity;
