@@ -1,4 +1,0 @@
-if(!other.isPushable){
-	
-}
-
