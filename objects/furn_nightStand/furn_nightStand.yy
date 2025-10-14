@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block",
+  "%Name":"furn_nightStand",
   "eventList":[],
   "managed":true,
-  "name":"obj_block",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},"propertyId":{"name":"isPushable","path":"objects/obj_block_parent/obj_block_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-  ],
+  "name":"furn_nightStand",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Block",
-    "path":"folders/Objects/Block.yy",
+    "name":"Furniture",
+    "path":"folders/Objects/Block/Furniture.yy",
   },
   "parentObjectId":{
     "name":"obj_block_parent",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_nightStand",
+    "path":"sprites/spr_nightStand/spr_nightStand.yy",
   },
   "spriteMaskId":null,
   "visible":true,
