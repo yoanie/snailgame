@@ -50,6 +50,7 @@
   "name":"snailgame",
   "resources":[
     {"id":{"name":"furn_nightStand","path":"objects/furn_nightStand/furn_nightStand.yy",},},
+    {"id":{"name":"furn_test","path":"objects/furn_test/furn_test.yy",},},
     {"id":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_dimRoof_example","path":"objects/obj_dimRoof_example/obj_dimRoof_example.yy",},},
@@ -63,6 +64,7 @@
     {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_fog","path":"sprites/spr_fog/spr_fog.yy",},},
+    {"id":{"name":"spr_furnitureTest","path":"sprites/spr_furnitureTest/spr_furnitureTest.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
     {"id":{"name":"spr_nightStand","path":"sprites/spr_nightStand/spr_nightStand.yy",},},
     {"id":{"name":"spr_shadething","path":"sprites/spr_shadething/spr_shadething.yy",},},
