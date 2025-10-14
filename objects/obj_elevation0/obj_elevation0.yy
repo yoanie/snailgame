@@ -9,7 +9,10 @@
     "name":"Debug",
     "path":"folders/Objects/Block/Debug.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_elevation_parent",
+    "path":"objects/obj_elevation_parent/obj_elevation_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

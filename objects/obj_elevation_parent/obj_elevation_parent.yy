@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_elevation4",
-  "eventList":[],
+  "%Name":"obj_elevation_parent",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_elevation4",
+  "name":"obj_elevation_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Debug",
     "path":"folders/Objects/Block/Debug.yy",
   },
-  "parentObjectId":{
-    "name":"obj_elevation_parent",
-    "path":"objects/obj_elevation_parent/obj_elevation_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,14 +25,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"elevationLevel","filters":[],"listItems":[],"multiselect":false,"name":"elevationLevel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_elevation4",
-    "path":"sprites/spr_elevation4/spr_elevation4.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
