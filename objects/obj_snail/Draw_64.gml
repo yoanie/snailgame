@@ -1,4 +1,12 @@
 
+
+if(showElevationDebug){
+	draw_text(self.x, self.y+100, "Elevation: " + string(elevationLevel));
+}
+
+
+
+
 //utilizing a temp variable because i want ground to be 0 
 //and dashes can't be used in a layer name
 
