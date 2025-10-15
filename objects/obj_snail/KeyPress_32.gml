@@ -1,6 +1,15 @@
-///@description Increase Elevation
+///@description TODO: Check if Elevation Level Exists | Increase Elevation
 
-self.layer = layer_get_id("Instances_"+string(elevationLevel+1));
-self.depth = layer_get_depth("Instances_"+string(elevationLevel+1));
-elevationLevel = int64(string_digits(layer_get_name(layer)));
+var newElevationInt = elevationLevel+1;
+var newElevation;
+if(newElevationInt >= 0){
+	newElevation = string(newElevationInt);
+} else {
+	newElevation = "sub" + string(abs(newElevationInt));
+}
 
+self.layer = layer_get_id("Instances_"+newElevation);
+self.depth = layer_get_depth("Instances_"+newElevation);
+
+show_debug_message(newElevationInt);
+elevationLevel = newElevationInt;
