@@ -11,8 +11,8 @@ y += yVelocity;
 //may cause hitbox issue? idk havent looked into yet
 if(xVelocity != 0){
 	if(xVelocity > 0){
-		image_xscale = -1;
+		self.image_xscale = -1;
 	} else {
-		image_xscale = 1;
+		self.image_xscale = 1;
 	}
 }
