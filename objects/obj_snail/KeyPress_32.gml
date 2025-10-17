@@ -1,15 +1,10 @@
-///@description TODO: Check if Elevation Level Exists | Increase Elevation
+///@description TODO: Consolidate into Right Click Menu | Increase Elevation
 
-var newElevationInt = elevationLevel+1;
-var newElevation;
-if(newElevationInt >= 0){
-	newElevation = string(newElevationInt);
-} else {
-	newElevation = "sub" + string(abs(newElevationInt));
+var newElevation = findLayerNameOfElevationLevel(elevationLevel + 1);
+if(newElevation != "oob"){
+	elevationLevel++;
+	self.layer = layer_get_id(newElevation);
+	self.depth = layer_get_depth(newElevation);
 }
 
-self.layer = layer_get_id("Instances_"+newElevation);
-self.depth = layer_get_depth("Instances_"+newElevation);
-
-show_debug_message(newElevationInt);
-elevationLevel = newElevationInt;
+show_debug_message(self.elevationLevel);

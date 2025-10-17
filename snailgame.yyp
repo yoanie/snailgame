@@ -76,6 +76,7 @@
     {"id":{"name":"obj_timeController","path":"objects/obj_timeController/obj_timeController.yy",},},
     {"id":{"name":"rm_elevationDebug","path":"rooms/rm_elevationDebug/rm_elevationDebug.yy",},},
     {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
+    {"id":{"name":"scr_elevation","path":"scripts/scr_elevation/scr_elevation.yy",},},
     {"id":{"name":"gui_elevationDown","path":"sprites/gui_elevationDown/gui_elevationDown.yy",},},
     {"id":{"name":"gui_elevationUp","path":"sprites/gui_elevationUp/gui_elevationUp.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
