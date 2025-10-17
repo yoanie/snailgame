@@ -1,5 +1,7 @@
-function elevationSet(lyr){
-	temp = string_copy(layer_get_name(lyr), 11, 10);
+function elevationSet(currentLayer){
+	temp = string_copy(layer_get_name(currentLayer), 11, 10);
+	
+	//dashes can't be used in a layer name
 	if(string_copy(temp, 1, 3) == "sub"){
 		temp = "-" + string_copy(temp, 4, 2);
 	}
@@ -18,4 +20,34 @@ function findLayerNameOfElevationLevel(newElevationInt){
 		return newElevation;
 	}
 	return "oob";
+}
+
+function reidentifyUpperElevationObjects(currentElevation){
+	layerName = findLayerNameOfElevationLevel(currentElevation+1);
+	if(layerName != "oob"){
+		return reidentifyElevationObjects(layerName);
+	}
+	blankArray = [];
+	return blankArray;
+}
+
+function reidentifyLowerElevationObjects(currentElevation){
+	layerName = findLayerNameOfElevationLevel(currentElevation-1);
+	if(layerName != "oob"){
+		return reidentifyElevationObjects(layerName);
+	}
+	blankArray = [];
+	return blankArray;
+}
+
+function reidentifyElevationObjects(layerName){
+	var temp = layer_get_all_elements(layerName);
+	var result;
+	for (var i = 0; i < array_length(temp); i++) {
+    if (layer_get_element_type(temp[i]) == layerelementtype_instance) {
+        var element = layer_instance_get_instance(temp[i]);
+        result[i] = element;
+    }
+}
+	return result;
 }
