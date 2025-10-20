@@ -1,4 +1,9 @@
-function snugLedges(xVelocity, yVelocity, cornersX, cornersY){
+function snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevation){
+	if(elevation == 0){
+		var result = [xVelocity, yVelocity];
+		return result;
+	}
+	
 	var cornersOffLedge = [false, false, false, false];
 
 	for(var t = 0; t < 4; t++){

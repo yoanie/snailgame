@@ -58,7 +58,6 @@
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_dimRoof_example","path":"objects/obj_dimRoof_example/obj_dimRoof_example.yy",},},
     {"id":{"name":"obj_dimRoof_parent","path":"objects/obj_dimRoof_parent/obj_dimRoof_parent.yy",},},
-    {"id":{"name":"obj_elevation_parent","path":"objects/obj_elevation_parent/obj_elevation_parent.yy",},},
     {"id":{"name":"obj_elevation0","path":"objects/obj_elevation0/obj_elevation0.yy",},},
     {"id":{"name":"obj_elevation1","path":"objects/obj_elevation1/obj_elevation1.yy",},},
     {"id":{"name":"obj_elevation2","path":"objects/obj_elevation2/obj_elevation2.yy",},},
@@ -104,8 +103,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_elevationDebug","path":"rooms/rm_elevationDebug/rm_elevationDebug.yy",},},
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
+    {"roomId":{"name":"rm_elevationDebug","path":"rooms/rm_elevationDebug/rm_elevationDebug.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

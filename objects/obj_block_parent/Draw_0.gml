@@ -1,3 +1,4 @@
+///@description Apply elevation based shaders
 
 var deltaElevation = self.elevationLevel - obj_snail.elevationLevel;
 if(deltaElevation > 0){

@@ -1,1 +1,3 @@
-depth = -y;
+if(!self.isGroundTile){
+	depth = -y;
+}

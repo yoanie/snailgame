@@ -10,8 +10,8 @@
     "path":"folders/Objects/Block/Debug.yy",
   },
   "parentObjectId":{
-    "name":"obj_elevation_parent",
-    "path":"objects/obj_elevation_parent/obj_elevation_parent.yy",
+    "name":"obj_block_parent",
+    "path":"objects/obj_block_parent/obj_block_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

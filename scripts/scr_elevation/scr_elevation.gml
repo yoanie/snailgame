@@ -7,6 +7,10 @@ function elevationSet(currentLayer){
 	if(string_copy(temp, 1, 3) == "sub"){
 		temp = "-" + string_copy(temp, 4, 2);
 	}
+	if(string_length(temp) == 0){
+		show_debug_message("###################\nATTENTION!!\nA layer isn't following the format 'Instances_#'!!!\nCheck another implemented room for a guideline to follow!\n##############");
+		return 0;
+	}
 	return real(temp);
 }
 
@@ -25,6 +29,7 @@ function findLayerNameOfElevationLevel(newElevationInt){
 }
 
 function reidentifyElevationObjects(currentElevation){
+	show_debug_message(	currentElevation );
 	layerName = findLayerNameOfElevationLevel(currentElevation);
 	if(layerName != "oob"){
 		return reidentifyElevationObjectsByLayerName(layerName);
@@ -35,7 +40,7 @@ function reidentifyElevationObjects(currentElevation){
 
 function reidentifyElevationObjectsByLayerName(layerName){
 	var temp = layer_get_all_elements(layerName);
-	var result;
+	var result = array_create(array_length(temp));
 	for (var i = 0; i < array_length(temp); i++) {
     if (layer_get_element_type(temp[i]) == layerelementtype_instance) {
         var element = layer_instance_get_instance(temp[i]);

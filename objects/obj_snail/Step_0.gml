@@ -12,7 +12,8 @@ var cornersX = [self.bbox_left, self.bbox_right, self.bbox_right, self.bbox_left
 var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom];
 
 //Make snail bbox snug against ledge's edge.
-var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY);
+//Unless elevationLevel = 0 (for now)
+var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevationLevel);
 
 //show_debug_message("new xVel: " + string(xVelocity) + ", new yVel: "+ string(yVelocity));
 
