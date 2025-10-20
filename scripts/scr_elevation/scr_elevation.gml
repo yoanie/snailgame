@@ -1,3 +1,5 @@
+
+
 function elevationSet(currentLayer){
 	temp = string_copy(layer_get_name(currentLayer), 11, 10);
 	

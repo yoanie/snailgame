@@ -11,24 +11,13 @@ var yVelocity = moveSpeed * (keyboard_check(vk_down) - keyboard_check(vk_up))
 var cornersX = [self.bbox_left, self.bbox_right, self.bbox_right, self.bbox_left];
 var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom];
 
-for(var t = 0; t < 4; t++){
-	//debug
-	//draw_set_colour(c_red);
-	//draw_circle(cornersX[t], cornersY[t], 10, true);
-	
-	var insts = ds_list_create();
-	instance_position_list(cornersX[t], cornersY[t], eyelevel, insts, true);	
-	
-	//show_debug_message(ds_list_find_value(insts, 0));
-	if(ds_list_size(insts) == 0){
-		show_debug_message("corner "+string(t)+" is stepping off a ledge!");
-	}
-	
-	ds_list_destroy(insts); //must have this line, otherwise memory issues
-}
+//Make snail bbox snug against ledge's edge.
+var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY);
 
-x += xVelocity;
-y += yVelocity;
+//show_debug_message("new xVel: " + string(xVelocity) + ", new yVel: "+ string(yVelocity));
+
+x += velocityVector[0];
+y += velocityVector[1];
 
 //look left/right
 //may cause hitbox issue? idk havent looked into yet

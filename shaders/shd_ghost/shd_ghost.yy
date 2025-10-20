@@ -1,7 +1,7 @@
 {
   "$GMShader":"",
-  "%Name":"shd_transparency",
-  "name":"shd_transparency",
+  "%Name":"shd_ghost",
+  "name":"shd_ghost",
   "parent":{
     "name":"Shaders",
     "path":"folders/Shaders.yy",

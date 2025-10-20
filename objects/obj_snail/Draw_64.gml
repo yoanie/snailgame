@@ -1,9 +1,5 @@
 ///@description 
 
-if(showElevationDebug){
-	draw_text(self.x, self.y+100, "Elevation: " + string(elevationLevel));
-}
-
 //above
 
 //show_debug_message("above elevationLevel objects (len " + string(array_length(above)) + ") ");
@@ -22,4 +18,18 @@ for(var i = 0; i < array_length(below); i++){
 	if(distance_to_object(below[i]) <= 64){
 		draw_sprite(gui_elevationDown, -1, below[i].x, below[i].y);
 	}
+}
+
+//bbox debug
+	if(showDebug){
+	var cornersX = [self.bbox_left, self.bbox_right, self.bbox_right, self.bbox_left];
+	var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom];
+
+	for(var t = 0; t < 4; t++){
+		draw_set_colour(c_black);
+		draw_circle(cornersX[t], cornersY[t], 3, false);
+		draw_set_colour(c_red);
+		draw_circle(cornersX[t], cornersY[t], 1, true);
+	}
+	draw_text(self.x, self.y+100, "Elevation: " + string(elevationLevel));
 }
