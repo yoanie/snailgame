@@ -9,7 +9,9 @@ if(showElevationDebug){
 //show_debug_message("above elevationLevel objects (len " + string(array_length(above)) + ") ");
 //show_debug_message(above);
 for(var i = 0; i < array_length(above); i++){
-	draw_sprite(gui_elevationUp, -1, above[i].x, above[i].y);
+	if(distance_to_object(above[i]) <= 64){
+		draw_sprite(gui_elevationUp, -1, above[i].x, above[i].y);
+	}
 }
 
 //below
@@ -17,5 +19,7 @@ for(var i = 0; i < array_length(above); i++){
 //show_debug_message("below elevationLevel objects (len " + string(array_length(below)) + ") ");
 //show_debug_message(below);
 for(var i = 0; i < array_length(below); i++){
-	draw_sprite(gui_elevationDown, -1, below[i].x, below[i].y);
+	if(distance_to_object(below[i]) <= 64){
+		draw_sprite(gui_elevationDown, -1, below[i].x, below[i].y);
+	}
 }
