@@ -1,1 +1,0 @@
-draw_text(50, 50, obj_snail.image_xscale)
