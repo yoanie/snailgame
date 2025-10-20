@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"furn_nightStand",
+  "%Name":"obj_elevationsub2",
   "eventList":[],
   "managed":true,
-  "name":"furn_nightStand",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},"propertyId":{"name":"isGroundTile","path":"objects/obj_block_parent/obj_block_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-  ],
+  "name":"obj_elevationsub2",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Furniture",
-    "path":"folders/Objects/Block/Furniture.yy",
+    "name":"Debug",
+    "path":"folders/Objects/Block/Debug.yy",
   },
   "parentObjectId":{
     "name":"obj_block_parent",
@@ -31,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_nightStand",
-    "path":"sprites/spr_nightStand/spr_nightStand.yy",
+    "name":"spr_elevationsub2",
+    "path":"sprites/spr_elevationsub2/spr_elevationsub2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
