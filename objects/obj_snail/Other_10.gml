@@ -5,8 +5,9 @@ var newElevation = findLayerNameOfElevationLevel(elevationLevel);
 	self.layer = layer_get_id(newElevation);
 	self.depth = layer_get_depth(newElevation);
 	
-	above = reidentifyUpperElevationObjects(elevationLevel);
-	below = reidentifyLowerElevationObjects(elevationLevel);
+	above = reidentifyElevationObjects(elevationLevel+1);
+	eyelevel = reidentifyElevationObjects(elevationLevel);
+	below = reidentifyElevationObjects(elevationLevel-1);
 //}
 
 show_debug_message(self.elevationLevel);

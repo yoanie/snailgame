@@ -22,25 +22,16 @@ function findLayerNameOfElevationLevel(newElevationInt){
 	return "oob";
 }
 
-function reidentifyUpperElevationObjects(currentElevation){
-	layerName = findLayerNameOfElevationLevel(currentElevation+1);
+function reidentifyElevationObjects(currentElevation){
+	layerName = findLayerNameOfElevationLevel(currentElevation);
 	if(layerName != "oob"){
-		return reidentifyElevationObjects(layerName);
+		return reidentifyElevationObjectsByLayerName(layerName);
 	}
 	blankArray = [];
 	return blankArray;
 }
 
-function reidentifyLowerElevationObjects(currentElevation){
-	layerName = findLayerNameOfElevationLevel(currentElevation-1);
-	if(layerName != "oob"){
-		return reidentifyElevationObjects(layerName);
-	}
-	blankArray = [];
-	return blankArray;
-}
-
-function reidentifyElevationObjects(layerName){
+function reidentifyElevationObjectsByLayerName(layerName){
 	var temp = layer_get_all_elements(layerName);
 	var result;
 	for (var i = 0; i < array_length(temp); i++) {

@@ -5,7 +5,7 @@
 ///If object is near snail and is eligible, warp snail to object.
 
 var insts = ds_list_create();
-instance_position_list(mouse_x, mouse_y, obj_elevation_parent, insts, true);
+instance_position_list(mouse_x, mouse_y, below, insts, true);
 
 for(var i = 0; i < ds_list_size(insts); i++){
 	var inst = insts[| i]; //gets inst from insts
