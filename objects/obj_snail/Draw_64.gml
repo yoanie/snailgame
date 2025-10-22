@@ -25,11 +25,20 @@ if(showDebug){
 	var cornersX = [self.bbox_left, self.bbox_right, self.bbox_right, self.bbox_left];
 	var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom];
 
+	draw_set_colour(c_black);
+	draw_circle(self.x, self.y, 3, false);
+	draw_set_colour(c_blue);
+	draw_circle(self.x, self.y, 1, true);
+
 	for(var t = 0; t < 4; t++){
 		draw_set_colour(c_black);
 		draw_circle(cornersX[t], cornersY[t], 3, false);
 		draw_set_colour(c_red);
 		draw_circle(cornersX[t], cornersY[t], 1, true);
+		draw_text(self.x, self.y+40+(20*(t)), "Corner "+string(t) + " (" + string(cornersX[t]) + ", " + string(cornersY[t]));
 	}
-	draw_text(self.x, self.y+100, "Elevation: " + string(elevationLevel));
+	
+	
+	
+	draw_text(self.x, self.y+120, "Elevation: " + string(elevationLevel));
 }

@@ -77,6 +77,7 @@
     {"id":{"name":"obj_timeController","path":"objects/obj_timeController/obj_timeController.yy",},},
     {"id":{"name":"rm_elevationDebug","path":"rooms/rm_elevationDebug/rm_elevationDebug.yy",},},
     {"id":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
+    {"id":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},},
     {"id":{"name":"scr_elevation","path":"scripts/scr_elevation/scr_elevation.yy",},},
     {"id":{"name":"scr_ledges","path":"scripts/scr_ledges/scr_ledges.yy",},},
     {"id":{"name":"shd_dim","path":"shaders/shd_dim/shd_dim.yy",},},
@@ -106,6 +107,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},},
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
     {"roomId":{"name":"rm_elevationDebug","path":"rooms/rm_elevationDebug/rm_elevationDebug.yy",},},
   ],
