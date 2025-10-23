@@ -72,6 +72,7 @@
     {"id":{"name":"obj_fog_parent","path":"objects/obj_fog_parent/obj_fog_parent.yy",},},
     {"id":{"name":"obj_fog","path":"objects/obj_fog/obj_fog.yy",},},
     {"id":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},},
+    {"id":{"name":"obj_pauseMenu","path":"objects/obj_pauseMenu/obj_pauseMenu.yy",},},
     {"id":{"name":"obj_snail","path":"objects/obj_snail/obj_snail.yy",},},
     {"id":{"name":"obj_sugar","path":"objects/obj_sugar/obj_sugar.yy",},},
     {"id":{"name":"obj_timeController","path":"objects/obj_timeController/obj_timeController.yy",},},
