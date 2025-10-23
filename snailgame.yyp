@@ -53,6 +53,8 @@
   },
   "name":"snailgame",
   "resources":[
+    {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
+    {"id":{"name":"fnt_menuText","path":"fonts/fnt_menuText/fnt_menuText.yy",},},
     {"id":{"name":"furn_nightStand","path":"objects/furn_nightStand/furn_nightStand.yy",},},
     {"id":{"name":"furn_test","path":"objects/furn_test/furn_test.yy",},},
     {"id":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},},
