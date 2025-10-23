@@ -13,4 +13,3 @@ var minMinutesChange = 5;
 metaTimeHours = (6 + floor((conversionRatio * currentTime)/60)) % 24;
 
 metaTimeMinutes = minMinutesChange*floor(((conversionRatio * currentTime)%60)/minMinutesChange);
-
