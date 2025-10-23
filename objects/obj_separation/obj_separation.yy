@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sugar",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_separation",
+  "eventList":[],
   "managed":true,
-  "name":"obj_sugar",
+  "name":"obj_separation",
   "overriddenProperties":[],
   "parent":{
-    "name":"Items",
-    "path":"folders/Objects/Items.yy",
+    "name":"Walls",
+    "path":"folders/Objects/Walls.yy",
   },
-  "parentObjectId":{
-    "name":"obj_item_parent",
-    "path":"objects/obj_item_parent/obj_item_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sugar",
-    "path":"sprites/spr_sugar/spr_sugar.yy",
+    "name":"spr_separation",
+    "path":"sprites/spr_separation/spr_separation.yy",
   },
   "spriteMaskId":null,
   "visible":true,
