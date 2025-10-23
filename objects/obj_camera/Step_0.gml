@@ -1,5 +1,9 @@
 var xTo, yTo;
 
+if(obj_timeController.timeIsFrozen){
+	return;
+}
+
 //set camera direction to point towards mouse
 move_towards_point(mouse_x, mouse_y, 0);
 

@@ -30,6 +30,8 @@ for(var i = 0; i < array_length(below); i++){
 
 //bbox debug
 if(showDebug){
+	draw_set_font(fnt_debug);
+	
 	var cornersX = [self.bbox_left, self.bbox_right, self.bbox_right, self.bbox_left];
 	var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom];
 
