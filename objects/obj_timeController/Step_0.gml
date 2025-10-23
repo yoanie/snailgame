@@ -1,9 +1,5 @@
 ///@description calculate time
 
-if(obj_pauseMenu.pauseMenuIsUp){
-	return;
-}
-
 //advance time
 currentTime += 1 / game_get_speed(gamespeed_fps);
 

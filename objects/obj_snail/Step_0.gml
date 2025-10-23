@@ -1,9 +1,4 @@
 ///@description Move player
-
-if(obj_timeController.timeIsFrozen){
-	return;
-}
-
 draw_set_alpha(1);
 
 var isRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
