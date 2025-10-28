@@ -29,8 +29,8 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"UNKNOWN","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"internal_id","filters":[],"listItems":[],"multiselect":false,"name":"internal_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-999","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"combines_with","filters":[],"listItems":[],"multiselect":false,"name":"combines_with","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"combines_into","filters":[],"listItems":[],"multiselect":false,"name":"combines_into","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"item_combines_with","filters":[],"listItems":[],"multiselect":false,"name":"item_combines_with","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"item_combines_into","filters":[],"listItems":[],"multiselect":false,"name":"item_combines_into","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
