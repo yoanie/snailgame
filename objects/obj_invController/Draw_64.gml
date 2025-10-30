@@ -12,5 +12,8 @@ for(var i = 0; i<array_length(self.inventory); i++){
 	if(self.inventory[i] != pointer_null){
 		name = self.inventory[i].name;
 	}
-	draw_text(0,view_hport-(15*(1+array_length(inventory) - i)), "Item "+string(i)+": " + name );
-}	
+	
+	var indicator = (self.selectedItemPointer==i ? "> " : "  ");
+	
+	draw_text(0,view_hport-(15*(1+array_length(inventory) - i)), indicator + "Item "+string(i)+": " + name );
+}
