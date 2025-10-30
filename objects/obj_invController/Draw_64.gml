@@ -17,3 +17,4 @@ for(var i = 0; i<array_length(self.inventory); i++){
 	
 	draw_text(0,view_hport-(15*(1+array_length(inventory) - i)), indicator + "Item "+string(i)+": " + name );
 }
+draw_text(0,view_hport-15, "Right-click an item to pick up. Press [1-4] to select item. Press 'Q' to drop selected item.");

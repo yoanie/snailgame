@@ -9,6 +9,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":51,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":52,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":81,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_invController",
@@ -32,15 +33,15 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"inventory","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"inventory","filters":[],"listItems":[
         "\"Item 0\"",
         "\"Item 1\"",
         "\"Item 2\"",
         "\"Item 3\"",
       ],"multiselect":true,"name":"inventory","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Item 1\"","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"selectedItemPointer","filters":[],"listItems":[],"multiselect":false,"name":"selectedItemPointer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"selectedItemId","filters":[],"listItems":[],"multiselect":false,"name":"selectedItemId","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-999","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"showDebug","filters":[],"listItems":[],"multiselect":false,"name":"showDebug","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"selectedItemPointer","filters":[],"listItems":[],"multiselect":false,"name":"selectedItemPointer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"selectedItemId","filters":[],"listItems":[],"multiselect":false,"name":"selectedItemId","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-999","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"showDebug","filters":[],"listItems":[],"multiselect":false,"name":"showDebug","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
