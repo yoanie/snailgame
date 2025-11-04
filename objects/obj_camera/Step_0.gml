@@ -1,3 +1,7 @@
+if(instance_exists(obj_pauseMenu) && obj_pauseMenu.menuIsUp){
+	return;
+}
+
 var xTo, yTo;
 
 //set camera direction to point towards mouse
