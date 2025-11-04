@@ -1,3 +1,4 @@
+///@description Get pushed by Snail, if pushable
 
 if(isPushable){
 	if(place_meeting(self.bbox_left, y, obj_snail)) {
