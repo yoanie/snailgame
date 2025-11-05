@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shelf_right",
+  "%Name":"obj_shelf_left_storage",
   "eventList":[],
   "managed":true,
-  "name":"obj_shelf_right",
+  "name":"obj_shelf_left_storage",
   "overriddenProperties":[],
   "parent":{
     "name":"Storage",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shelf_right",
-    "path":"sprites/spr_shelf_right/spr_shelf_right.yy",
+    "name":"spr_shelf_left_storage",
+    "path":"sprites/spr_shelf_left_storage/spr_shelf_left_storage.yy",
   },
   "spriteMaskId":null,
   "visible":true,
