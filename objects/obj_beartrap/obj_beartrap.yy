@@ -1,22 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bearTrap",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_beartrap",
+  "eventList":[],
   "managed":true,
-  "name":"obj_bearTrap",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},"propertyId":{"name":"isPushable","path":"objects/obj_block_parent/obj_block_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-  ],
+  "name":"obj_beartrap",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Environmental",
-    "path":"folders/Objects/Block/Environmental.yy",
+    "name":"Garage",
+    "path":"folders/Objects/HouseRooms/Garage.yy",
   },
-  "parentObjectId":{
-    "name":"obj_block_parent",
-    "path":"objects/obj_block_parent/obj_block_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
