@@ -27,7 +27,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"inventory","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"inventory","filters":[],"listItems":[
         "\"Item 0\"",
         "\"Item 1\"",
         "\"Item 2\"",
