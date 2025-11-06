@@ -36,7 +36,6 @@
     {"$GMObjectProperty":"v2","%Name":"metaTimeHours","filters":[],"listItems":[],"multiselect":false,"name":"metaTimeHours","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"metaTimeMinutes","filters":[],"listItems":[],"multiselect":false,"name":"metaTimeMinutes","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"AMPM","filters":[],"listItems":[],"multiselect":false,"name":"AMPM","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v2","%Name":"timeIsFrozen","filters":[],"listItems":[],"multiselect":false,"name":"timeIsFrozen","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
