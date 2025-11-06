@@ -21,6 +21,7 @@
     {"$GMFolder":"","%Name":"Furniture","folderPath":"folders/Objects/Block/Furniture.yy","name":"Furniture","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"dimRoof","folderPath":"folders/Objects/dimRoof.yy","name":"dimRoof","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fog","folderPath":"folders/Objects/Fog.yy","name":"Fog","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Buttons","folderPath":"folders/Objects/Buttons.yy","name":"Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Hitboxes","folderPath":"folders/Objects/Hitboxes.yy","name":"Hitboxes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Human","folderPath":"folders/Objects/Human.yy","name":"Human","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Objects/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -65,6 +66,7 @@
   "resources":[
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
+    {"id":{"name":"btn_play","path":"objects/btn_play/btn_play.yy",},},
     {"id":{"name":"furn_nightStand","path":"objects/furn_nightStand/furn_nightStand.yy",},},
     {"id":{"name":"furn_test","path":"objects/furn_test/furn_test.yy",},},
     {"id":{"name":"obj_bearTrap","path":"objects/obj_bearTrap/obj_bearTrap.yy",},},
@@ -137,6 +139,7 @@
     {"id":{"name":"spr_lighter","path":"sprites/spr_lighter/spr_lighter.yy",},},
     {"id":{"name":"spr_makeshiftFlamethrower","path":"sprites/spr_makeshiftFlamethrower/spr_makeshiftFlamethrower.yy",},},
     {"id":{"name":"spr_nightStand","path":"sprites/spr_nightStand/spr_nightStand.yy",},},
+    {"id":{"name":"spr_play","path":"sprites/spr_play/spr_play.yy",},},
     {"id":{"name":"spr_screwdriver","path":"sprites/spr_screwdriver/spr_screwdriver.yy",},},
     {"id":{"name":"spr_separation","path":"sprites/spr_separation/spr_separation.yy",},},
     {"id":{"name":"spr_shadething","path":"sprites/spr_shadething/spr_shadething.yy",},},
