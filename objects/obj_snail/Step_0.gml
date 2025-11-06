@@ -1,7 +1,5 @@
 ///@description Move player
-if(instance_exists(obj_pauseMenu) && obj_pauseMenu.menuIsUp){
-	return;
-}
+draw_set_alpha(1);
 
 var isRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var isLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));

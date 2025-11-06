@@ -1,1 +1,0 @@
-draw_text(10, 50, string(fps_real));
