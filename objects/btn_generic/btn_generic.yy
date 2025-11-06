@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"btn_play",
+  "%Name":"btn_generic",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"btn_play",
+  "name":"btn_generic",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
