@@ -6,8 +6,8 @@
   "name":"obj_separation",
   "overriddenProperties":[],
   "parent":{
-    "name":"Temp",
-    "path":"folders/Objects/Temp.yy",
+    "name":"Walls",
+    "path":"folders/Objects/Walls.yy",
   },
   "parentObjectId":null,
   "persistent":false,

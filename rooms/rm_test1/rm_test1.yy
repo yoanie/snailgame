@@ -40,6 +40,7 @@
     {"name":"inst_FE5659A_1","path":"rooms/rm_test1/rm_test1.yy",},
     {"name":"inst_11207A43_1","path":"rooms/rm_test1/rm_test1.yy",},
     {"name":"inst_748B3F2F_1","path":"rooms/rm_test1/rm_test1.yy",},
+    {"name":"inst_2B23D6DA","path":"rooms/rm_test1/rm_test1.yy",},
   ],
   "isDnd":false,
   "layers":[
