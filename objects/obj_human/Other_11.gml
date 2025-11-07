@@ -4,12 +4,14 @@
 //the effects of the last collided hitbox.
 
 //the hitbox should be in charge of setting hitboxTouching
-var hitboxTouchingId = self.hitboxTouching.collisionId;
-show_debug_message("("+object_get_name(self.object_index)+"): colliding w/ hitbox id: " + string(hitboxTouchingId));
 
-switch (hitboxTouchingId){
+show_debug_message("("+object_get_name(self.object_index)+"): colliding w/ hitbox id: " + string(self.hitboxTouchingId));
+
+switch (self.hitboxTouchingId){
 	case 29: //beartrap hitbox
 		show_debug_message("human shall die");
+		obj_bearTrap.image_index = 1;
+		event_perform_object(obj_endMenu, ev_other, ev_user0);
 		instance_destroy(self.hitboxTouching);
 		instance_destroy(self);
 		break;

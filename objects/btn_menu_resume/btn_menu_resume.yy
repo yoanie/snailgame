@@ -12,7 +12,10 @@
     "name":"Buttons",
     "path":"folders/Objects/Buttons.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"btn_generic",
+    "path":"objects/btn_generic/btn_generic.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

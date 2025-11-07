@@ -1,6 +1,7 @@
 ///@description Trigger Menu
 
-menuIsUp=!menuIsUp;
+event_inherited();
+
 if(instance_exists(obj_timeController)){
 	obj_timeController.timeIsFrozen = self.menuIsUp;
 }

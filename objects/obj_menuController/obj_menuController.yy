@@ -1,22 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pauseMenu",
+  "%Name":"obj_menuController",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pauseMenu",
+  "name":"obj_menuController",
   "overriddenProperties":[],
   "parent":{
     "name":"Meta",
     "path":"folders/Objects/Meta.yy",
   },
-  "parentObjectId":{
-    "name":"obj_menuController",
-    "path":"objects/obj_menuController/obj_menuController.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"menuIsUp","filters":[],"listItems":[],"multiselect":false,"name":"menuIsUp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"globalMenuIsUp","filters":[],"listItems":[],"multiselect":false,"name":"globalMenuIsUp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
