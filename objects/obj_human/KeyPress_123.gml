@@ -1,0 +1,1 @@
+self.debug_grid = !self.debug_grid;
