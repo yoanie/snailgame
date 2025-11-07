@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"btn_generic",
+  "%Name":"btn_menu_resume",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"btn_generic",
+  "name":"btn_menu_resume",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
@@ -25,13 +26,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"sprite_index","filters":[],"listItems":[],"multiselect":false,"name":"sprite_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_index","varType":4,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_blank",
-    "path":"sprites/spr_blank/spr_blank.yy",
+    "name":"spr_play",
+    "path":"sprites/spr_play/spr_play.yy",
   },
   "spriteMaskId":null,
   "visible":true,
