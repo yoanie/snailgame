@@ -180,7 +180,6 @@
     {"id":{"name":"obj_wall_top_02","path":"objects/obj_wall_top_02/obj_wall_top_02.yy",},},
     {"id":{"name":"obj_titleMenu","path":"objects/obj_titleMenu/obj_titleMenu.yy",},},
     {"id":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},},
-    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"menu_titleScreen","path":"rooms/menu_titleScreen/menu_titleScreen.yy",},},
     {"id":{"name":"rm_elevationDebug","path":"rooms/rm_elevationDebug/rm_elevationDebug.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
