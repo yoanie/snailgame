@@ -67,6 +67,7 @@
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"btn_generic","path":"objects/btn_generic/btn_generic.yy",},},
+    {"id":{"name":"btn_roomtrans","path":"objects/btn_roomtrans/btn_roomtrans.yy",},},
     {"id":{"name":"furn_nightStand","path":"objects/furn_nightStand/furn_nightStand.yy",},},
     {"id":{"name":"furn_test","path":"objects/furn_test/furn_test.yy",},},
     {"id":{"name":"obj_bearTrap","path":"objects/obj_bearTrap/obj_bearTrap.yy",},},

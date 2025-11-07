@@ -1,1 +1,1 @@
-room_goto(self.roomToGoTo);
+//insert whatever you want the button to do here
