@@ -268,8 +268,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_test3","path":"rooms/rm_test3/rm_test3.yy",},},
+    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"menu_titleScreen","path":"rooms/menu_titleScreen/menu_titleScreen.yy",},},
     {"roomId":{"name":"rm_test2","path":"rooms/rm_test2/rm_test2.yy",},},
     {"roomId":{"name":"rm_test1","path":"rooms/rm_test1/rm_test1.yy",},},
