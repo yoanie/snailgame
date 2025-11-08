@@ -12,10 +12,7 @@
     "name":"Meta",
     "path":"folders/Objects/Meta.yy",
   },
-  "parentObjectId":{
-    "name":"obj_menuController",
-    "path":"objects/obj_menuController/obj_menuController.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

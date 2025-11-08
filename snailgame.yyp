@@ -108,6 +108,7 @@
     {"id":{"name":"obj_table","path":"objects/obj_table/obj_table.yy",},},
     {"id":{"name":"obj_thing","path":"objects/obj_thing/obj_thing.yy",},},
     {"id":{"name":"obj_timeController","path":"objects/obj_timeController/obj_timeController.yy",},},
+    {"id":{"name":"obj_titleMenu","path":"objects/obj_titleMenu/obj_titleMenu.yy",},},
     {"id":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"menu_titleScreen","path":"rooms/menu_titleScreen/menu_titleScreen.yy",},},

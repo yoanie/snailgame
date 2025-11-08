@@ -5,13 +5,16 @@
 
 //the hitbox should be in charge of setting hitboxTouching
 
-show_debug_message("("+object_get_name(self.object_index)+"): colliding w/ hitbox id: " + string(self.hitboxTouchingId));
+show_debug_message("("+object_get_name(self.object_index)+"): ");
+show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
 
 switch (self.hitboxTouchingId){
 	case 29: //beartrap hitbox
 		show_debug_message("human shall die");
 		obj_bearTrap.image_index = 1;
-		event_perform_object(obj_endMenu, ev_other, ev_user0);
+		with(obj_endMenu){
+			event_user(0);
+		}
 		instance_destroy(self.hitboxTouching);
 		instance_destroy(self);
 		break;
