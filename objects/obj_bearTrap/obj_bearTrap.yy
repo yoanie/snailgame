@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bear_trap",
+    "path":"sprites/spr_bear_trap/spr_bear_trap.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
