@@ -1,6 +1,11 @@
 ///@description Apply outline shaders
 
-//SHADER IS BY 
+if(!self.isMouseHovering || distance_to_object(obj_snail) > 64){ 
+	draw_self(); 
+	return; 
+}
+
+//SHADER IS BY MATHAROO
 var THICKNESS = 4;
 var COLOR = c_yellow;
 var ACCURACY = 16;
