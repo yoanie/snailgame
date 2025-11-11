@@ -5,4 +5,4 @@ hitbox.gluedTo = self;
 hitbox.collisionId = -10;
 hitbox.affectsHuman = false;
 hitbox.affectsSnail = true;
-hitbox.radius = 10;
+hitbox.radius = 21;
