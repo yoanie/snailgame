@@ -1,3 +1,11 @@
+
+switch (self.state){
+	case -1: //he died
+		return;
+	case 0: //alive and well
+		break;
+}
+
 /*
 if(obj_timeController.metaTimeHours == 7 && obj_timeController.metaTimeMinutes == 0) {
 	var path = path_add();

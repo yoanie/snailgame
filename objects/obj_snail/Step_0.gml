@@ -2,6 +2,12 @@
 if(instance_exists(obj_menu_pause) && obj_menu_pause.menuIsUp){
 	return;
 }
+switch (self.state){
+	case -1: //he died
+		return;
+	case 0: //alive and well
+		break;
+}
 
 var isRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var isLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));

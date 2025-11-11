@@ -13,9 +13,8 @@ if(self.state == -1){
 }
 
 switch (self.hitboxTouchingId){
-	case 29: //beartrap hitbox
-		show_debug_message("human shall die");
-		obj_bearTrap.image_index = 1;
+	case -10: //human crushing hitbox
+		show_debug_message("snail shall die");
 		with(obj_menu_end){
 			event_user(0);
 		}
