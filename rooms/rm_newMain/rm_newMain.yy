@@ -352,6 +352,7 @@
     {"name":"inst_779AFC65","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_6CAD2AE2","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_77CA8E70","path":"rooms/rm_newMain/rm_newMain.yy",},
+    {"name":"inst_8DE3ACA","path":"rooms/rm_newMain/rm_newMain.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -708,6 +709,7 @@
         {"$GMRInstance":"v4","%Name":"inst_35D3FEB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35D3FEB","objectId":{"name":"obj_chair_right_dining","path":"objects/obj_chair_right_dining/obj_chair_right_dining.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2368.0,"y":928.0,},
         {"$GMRInstance":"v4","%Name":"inst_6385F3BB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6385F3BB","objectId":{"name":"obj_chair_right_dining","path":"objects/obj_chair_right_dining/obj_chair_right_dining.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":928.0,},
         {"$GMRInstance":"v4","%Name":"inst_7B1B706F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B1B706F","objectId":{"name":"obj_counter_left","path":"objects/obj_counter_left/obj_counter_left.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2688.0,"y":448.0,},
+        {"$GMRInstance":"v4","%Name":"inst_8DE3ACA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_8DE3ACA","objectId":{"name":"obj_fertilizer","path":"objects/obj_fertilizer/obj_fertilizer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":448.0,},
       ],"layers":[],"name":"Instances_0","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Flooring","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_D9FF080","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_D9FF080","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_floor1","path":"sprites/spr_floor1/spr_floor1.yy",},"x":800.0,"y":96.0,},
