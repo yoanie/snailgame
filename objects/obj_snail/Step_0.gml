@@ -33,9 +33,27 @@ var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom
 var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevationLevel);
 
 //show_debug_message("new xVel: " + string(xVelocity) + ", new yVel: "+ string(yVelocity));
+var newX = self.x + velocityVector[0];
+var newY = self.y + velocityVector[1];
 
-x += velocityVector[0];
-y += velocityVector[1];
+while(place_meeting(newX, self.y, obj_wall_parent)) {
+	if(isRight) {
+		newX -= 1;
+	} else if(isLeft) {
+		newX += 1;
+	}
+}
+
+while(place_meeting(self.x, newY, obj_wall_parent)) {
+	if(isUp) {
+		newY += 1;
+	} else if(isDown) {
+		newY -= 1;
+	}
+}
+
+self.x = newX;
+self.y = newY;
 
 //look left/right
 //may cause hitbox issue? idk havent looked into yet
