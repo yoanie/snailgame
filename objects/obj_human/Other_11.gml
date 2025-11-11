@@ -12,7 +12,7 @@ switch (self.hitboxTouchingId){
 	case 29: //beartrap hitbox
 		show_debug_message("human shall die");
 		obj_bearTrap.image_index = 1;
-		with(obj_endMenu){
+		with(obj_menu_end){
 			event_user(0);
 		}
 		instance_destroy(self.hitboxTouching);
