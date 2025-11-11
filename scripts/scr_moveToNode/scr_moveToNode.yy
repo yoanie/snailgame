@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_moveToNode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_moveToNode",
+  "parent":{
+    "name":"Nodes",
+    "path":"folders/Scripts/Nodes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

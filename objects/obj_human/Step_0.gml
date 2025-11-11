@@ -2,13 +2,15 @@ if(obj_timeController.metaTimeHours == 7 && obj_timeController.metaTimeMinutes =
 	var path = path_add();
 	mp_linear_path(path, node_bed.x, node_bed.y, 2, false);
 	path_start(path, 2, path_action_stop, true);
-	audio_play_sound(sfx_human_walking, 1, false, 10)
 
 } else if(obj_timeController.metaTimeHours == 7 && obj_timeController.metaTimeMinutes == 15) {
+	/*
 	var path = path_add();
 	mp_grid_path(grid, path, self.x, self.y, node_night_stand.x, node_night_stand.y, true);
 	path_set_kind(path, 1);
 	path_start(path, 10, path_action_stop, true);
+	*/
+	MoveToNode(node_night_stand);
 } else if(obj_timeController.metaTimeHours == 7 && obj_timeController.metaTimeMinutes == 30) {
 	var path = path_add();
 	mp_grid_path(grid, path, self.x, self.y, node_toilet.x, node_toilet.y, true);
