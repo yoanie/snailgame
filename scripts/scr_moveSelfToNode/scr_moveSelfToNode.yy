@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_moveToNode",
+  "%Name":"scr_moveSelfToNode",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_moveToNode",
+  "name":"scr_moveSelfToNode",
   "parent":{
     "name":"Nodes",
     "path":"folders/Scripts/Nodes.yy",
