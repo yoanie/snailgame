@@ -1,6 +1,6 @@
 ///@description calculate time
 
-if(instance_exists(obj_pauseMenu) && obj_pauseMenu.menuIsUp){
+if(instance_exists(obj_menu_pause) && obj_menu_pause.menuIsUp){
 	return;
 }
 

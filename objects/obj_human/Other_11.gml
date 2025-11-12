@@ -8,14 +8,17 @@
 show_debug_message("("+object_get_name(self.object_index)+"): ");
 show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
 
+if(self.state == -1){
+	return; //if ded can't detec
+}
+
 switch (self.hitboxTouchingId){
 	case 29: //beartrap hitbox
 		show_debug_message("human shall die");
 		obj_bearTrap.image_index = 1;
-		with(obj_endMenu){
+		with(obj_menu_end){
 			event_user(0);
 		}
-		instance_destroy(self.hitboxTouching);
-		instance_destroy(self);
+		self.state = -1;
 		break;
 }
