@@ -354,6 +354,7 @@
     {"name":"inst_77CA8E70","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_8DE3ACA","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_2F2F2781","path":"rooms/rm_newMain/rm_newMain.yy",},
+    {"name":"inst_3798994B","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
