@@ -350,11 +350,11 @@
     {"name":"inst_4B3393E9","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_211FE1C4","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_779AFC65","path":"rooms/rm_newMain/rm_newMain.yy",},
-    {"name":"inst_6CAD2AE2","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_77CA8E70","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_8DE3ACA","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_2F2F2781","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_25B9F64E","path":"rooms/rm_newMain/rm_newMain.yy",},
+    {"name":"inst_6CAD2AE2","path":"rooms/rm_newMain/rm_newMain.yy",},
   ],
   "isDnd":false,
   "layers":[
