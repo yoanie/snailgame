@@ -6,3 +6,11 @@ hitbox.collisionId = -10;
 hitbox.affectsHuman = false;
 hitbox.affectsSnail = true;
 hitbox.radius = 21;
+
+// Movement tracking
+x_prev = x;
+y_prev = y;
+
+// Sound setup
+walk_sound = sfx_humanWalking
+walk_sound_inst = noone;
