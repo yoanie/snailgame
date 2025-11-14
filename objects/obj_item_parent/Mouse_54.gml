@@ -16,7 +16,7 @@
 	}
 }*/
 
-if (distance_to_object(obj_snail) <= 32
+if (distance_to_object(obj_snail) <= itemPickupRange
 	&& (mouse_x <= self.bbox_right) && (mouse_x >= self.bbox_left)
 	&& (mouse_y <= self.bbox_bottom) && (mouse_y >= self.bbox_top)) {
 	
