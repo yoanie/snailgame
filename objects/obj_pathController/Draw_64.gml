@@ -1,0 +1,1 @@
+draw_text(10, 40, string(obj_human.state));
