@@ -6,7 +6,7 @@ switch (self.state){
 		break;
 }
 
-/*
+
 if(obj_timeController.metaTimeHours == 7 && obj_timeController.metaTimeMinutes == 0) {
 	var path = path_add();
 	mp_linear_path(path, node_bed.x, node_bed.y, 2, false);
@@ -90,4 +90,25 @@ if(obj_timeController.metaTimeHours == 7 && obj_timeController.metaTimeMinutes =
 } else if(obj_timeController.metaTimeHours == 21 && obj_timeController.metaTimeMinutes == 30) {
 	MoveSelfToNode(node_bed);
 }
-*/
+
+//Walking sound with human movement
+//movement since last step check
+var is_moving = (x != x_prev) || (y != y_prev);
+
+// 2. Sound logic
+if (is_moving) {
+    // If moving, make sure walking sound is playing
+    if (walk_sound_inst == noone || !audio_is_playing(walk_sound_inst)) {
+        walk_sound_inst = audio_play_sound(walk_sound, 0, true); // loop
+    }
+} else {
+    // If not moving, stop the walking sound
+    if (walk_sound_inst != noone && audio_is_playing(walk_sound_inst)) {
+        audio_stop_sound(walk_sound_inst);
+        walk_sound_inst = noone;
+    }
+}
+
+//Update previous position for next frame
+x_prev = x;
+y_prev = y;
