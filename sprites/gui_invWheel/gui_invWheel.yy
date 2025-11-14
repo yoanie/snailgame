@@ -4,22 +4,22 @@
   "bboxMode":0,
   "bbox_bottom":278,
   "bbox_left":1,
-  "bbox_right":279,
-  "bbox_top":0,
+  "bbox_right":278,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"8a09faae-2daa-465f-bf15-01bf5701f0e1","name":"8a09faae-2daa-465f-bf15-01bf5701f0e1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9bfc8375-202e-4041-9da5-231a5f17f190","name":"9bfc8375-202e-4041-9da5-231a5f17f190","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":280,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e5fc002f-830f-4d44-b81e-72580861fd24","blendMode":0,"displayName":"default","isLocked":false,"name":"e5fc002f-830f-4d44-b81e-72580861fd24","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1a07f826-84ab-4e69-b767-d05f8df822d3","blendMode":0,"displayName":"default","isLocked":false,"name":"1a07f826-84ab-4e69-b767-d05f8df822d3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"gui_invWheel",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8a09faae-2daa-465f-bf15-01bf5701f0e1","path":"sprites/gui_invWheel/gui_invWheel.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"321d5a6c-c8d2-4cc8-bb7f-f67aa5ccac70","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9bfc8375-202e-4041-9da5-231a5f17f190","path":"sprites/gui_invWheel/gui_invWheel.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2b2db47d-2885-45a1-b9b0-469964912b92","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
