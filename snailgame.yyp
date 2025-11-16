@@ -102,6 +102,7 @@
   "resources":[
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
+    {"id":{"name":"fnt_tooltip","path":"fonts/fnt_tooltip/fnt_tooltip.yy",},},
     {"id":{"name":"btn_generic","path":"objects/btn_generic/btn_generic.yy",},},
     {"id":{"name":"btn_menu_quit","path":"objects/btn_menu_quit/btn_menu_quit.yy",},},
     {"id":{"name":"btn_menu_resume","path":"objects/btn_menu_resume/btn_menu_resume.yy",},},
@@ -205,6 +206,7 @@
     {"id":{"name":"outline_start_surface","path":"scripts/outline_start_surface/outline_start_surface.yy",},},
     {"id":{"name":"outline_start","path":"scripts/outline_start/outline_start.yy",},},
     {"id":{"name":"scr_elevation","path":"scripts/scr_elevation/scr_elevation.yy",},},
+    {"id":{"name":"scr_fontTools","path":"scripts/scr_fontTools/scr_fontTools.yy",},},
     {"id":{"name":"scr_inventory","path":"scripts/scr_inventory/scr_inventory.yy",},},
     {"id":{"name":"scr_ledges","path":"scripts/scr_ledges/scr_ledges.yy",},},
     {"id":{"name":"scr_moveSelfToNode","path":"scripts/scr_moveSelfToNode/scr_moveSelfToNode.yy",},},

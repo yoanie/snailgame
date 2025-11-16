@@ -30,6 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"cursorState","filters":[],"listItems":[],"multiselect":false,"name":"cursorState","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"normal","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"currentTooltipMessage","filters":[],"listItems":[],"multiselect":false,"name":"currentTooltipMessage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"goober","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
