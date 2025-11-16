@@ -5,16 +5,19 @@ if(!self.isMouseHovering || distance_to_object(obj_snail) > 64){
 	return; 
 }
 
+var COLOR = c_yellow;
+
 //If pickup allowed, give player tooltip on action
 if(obj_cursorStateController.cursorState=="normal"){
 	obj_cursorStateController.currentTooltipMessage = "[Right-click] Pick up "+self.name;
 } else if(obj_cursorStateController.cursorState=="item"){
-	
+	//implement combining items later
+	draw_self(); 
+	return;
 }
 
 //SHADER IS BY MATHAROO
 var THICKNESS = 4;
-var COLOR = c_yellow;
 var ACCURACY = 16;
 var TOLERANCE = 0;
 
