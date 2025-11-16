@@ -25,6 +25,7 @@ if (distance_to_object(obj_snail) <= itemPickupRange
 	show_debug_message(nextAvail);
 	show_debug_message(obj_invController.inventory);
 	if(nextAvail != -1){
+		audio_play_sound(sfx_itemPickup, 0, false);
 		obj_invController.inventory[nextAvail] = self;
 		instance_destroy(self);
 	}
