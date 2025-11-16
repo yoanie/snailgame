@@ -1,6 +1,6 @@
 ///@description Apply outline shaders
 
-if(!self.isMouseHovering || distance_to_object(obj_snail) > 64){ 
+if(!self.isMouseHovering || distance_to_object(obj_snail) > obj_snail.itemReach){ 
 	draw_self(); 
 	return; 
 }
