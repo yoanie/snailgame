@@ -1,7 +1,4 @@
-/*
-if (distance_to_object(obj_snail) <= itemPickupRange
-	&& (mouse_x <= self.bbox_right) && (mouse_x >= self.bbox_left)
-	&& (mouse_y <= self.bbox_bottom) && (mouse_y >= self.bbox_top)) {
+if (distance_to_object(obj_snail) <= itemPickupRange) {
 	
 	show_debug_message("touched!");
 	var nextAvail = findNextEmptyIndexInInventory(obj_invController.inventory);
@@ -12,4 +9,3 @@ if (distance_to_object(obj_snail) <= itemPickupRange
 		instance_destroy(self);
 	}
 }
-*/

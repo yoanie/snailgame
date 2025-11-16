@@ -5,6 +5,13 @@ if(!self.isMouseHovering || distance_to_object(obj_snail) > 64){
 	return; 
 }
 
+//If pickup allowed, give player tooltip on action
+if(obj_cursorStateController.cursorState=="normal"){
+	obj_cursorStateController.currentTooltipMessage = "[Right-click] Pick up "+self.name;
+} else if(obj_cursorStateController.cursorState=="item"){
+	
+}
+
 //SHADER IS BY MATHAROO
 var THICKNESS = 4;
 var COLOR = c_yellow;
