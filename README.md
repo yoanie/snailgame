@@ -4,10 +4,12 @@ A snail’s life is already hard enough as it is, but when a human floods your h
 
 
 ---
-**Controls (subject to change):**
-- W, A, S and D or Arrow keys | Move around
-- Left Click | Use item on ground
-- Right Click | Pick up and drop item (can only carry one at a time)
-- Shift | Decrease elevation (when hovering over indicated areas)
-- Space | Increase elevation (when hovering over indicated areas)
+**Controls:**
+Snurder Game uses a "cursor state" system for the sake of making gameplay more intuitive. There are only 2 states the cursor can be in, that being what will be called the "normal" and "item" states. States can be toggled with the Control key.
+- Move around | W, A, S and D or Arrow keys
 - Escape | Pause game
+
+- Pick up item | Left-click in the "item" cursor state
+- Drop currently selected item | Right-click in the "item" cursor state
+- Combine item on ground with currenly selected item | Left-click in the "normal" cursor state
+- Climb up or down | Right-click in the "normal" cursor state
