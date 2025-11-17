@@ -16,24 +16,35 @@ if(deltaElevation != 0){
 }
 
 
+
+var ALPHA = .4;
 var COLOR = c_yellow;
 
-//If pickup allowed, give player tooltip on action
 if(self.isSelfInteractable){
-	//isSelfInteractable implies that item is within snail's item reach range
-	//and that prereqs for each cursorState is met (see begin step)
+	if(distance_to_object(obj_snail) <= obj_snail.itemReach){
+		ALPHA = 1.0;
+	}
 	
 	if(obj_cursorStateController.cursorState=="normal"){
-		obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
-	} else if(obj_cursorStateController.cursorState=="item"){
 		COLOR = c_aqua;
-		obj_cursorStateController.tooltip_left += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
 	}
 } else {
-	//If not selecting item or out of reach, just return
 	draw_self();
 	return;
 }
+
+
+//If pickup allowed, give player tooltip on action
+if(self.isMouseHovering && 
+	distance_to_object(obj_snail) <= obj_snail.itemReach){
+	
+	if(obj_cursorStateController.cursorState=="item"){
+		obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
+	} else if(obj_cursorStateController.cursorState=="normal"){
+		obj_cursorStateController.tooltip_left += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
+	}
+}
+
 
 //SHADER IS BY MATHAROO
 var THICKNESS = 4;
@@ -53,7 +64,7 @@ shader_set_uniform_f(uni_size, _w, _h);
 
 shader_set_uniform_f(uni_thick, THICKNESS);
 
-shader_set_uniform_f(uni_color, color_get_red(COLOR)/255, color_get_green(COLOR)/255, color_get_blue(COLOR)/255);
+shader_set_uniform_f(uni_color, color_get_red(COLOR)/255, color_get_green(COLOR)/255, color_get_blue(COLOR)/255, ALPHA);
 
 var acc = ACCURACY;
 

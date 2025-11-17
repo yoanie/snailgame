@@ -1,7 +1,10 @@
 ///@description drop item/combine items
 
+if(distance_to_object(obj_snail) > obj_snail.itemReach || !self.isMouseHovering)
+	return;
+
 if (self.isSelfInteractable &&
-	obj_cursorStateController.cursorState == "normal") {
+	obj_cursorStateController.cursorState == "item") {
 	
 	show_debug_message("touched!");
 	var nextAvail = findNextEmptyIndexInInventory(obj_invController.inventory);
@@ -12,7 +15,7 @@ if (self.isSelfInteractable &&
 		instance_destroy(self);
 	}
 } else if (self.isSelfInteractable &&
-	obj_cursorStateController.cursorState=="item") {
+	obj_cursorStateController.cursorState=="normal") {
 	
 	show_debug_message("combined!");
 	instance_create_layer(self.x, self.y, findLayerNameOfElevationLevel(self.elevationLevel), self.item_combines_into);

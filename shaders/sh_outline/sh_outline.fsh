@@ -6,7 +6,7 @@ varying vec4 v_vColour;
 
 uniform vec2 size;
 uniform float thick;
-uniform vec3 oColor;
+uniform vec4 oColor;
 uniform float accuracy;
 uniform float tol;
 uniform vec4 uvs;
@@ -33,7 +33,7 @@ void main()
 		if (outline) break;
     }
     
-    if (outline) gl_FragColor = vec4(oColor.r, oColor.g, oColor.b, 1.0);
+    if (outline) gl_FragColor = vec4(oColor.r, oColor.g, oColor.b, oColor.a);
 }
 
 
