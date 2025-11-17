@@ -6,7 +6,6 @@
   "name":"obj_block",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},"propertyId":{"name":"isPushable","path":"objects/obj_block_parent/obj_block_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_block_parent","path":"objects/obj_block_parent/obj_block_parent.yy",},"propertyId":{"name":"isGroundTile","path":"objects/obj_block_parent/obj_block_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"Block",

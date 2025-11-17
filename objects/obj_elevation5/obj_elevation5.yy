@@ -7,11 +7,11 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Debug",
-    "path":"folders/Objects/Block/Debug.yy",
+    "path":"folders/Objects/Floor Tiles/Debug.yy",
   },
   "parentObjectId":{
-    "name":"obj_block_parent",
-    "path":"objects/obj_block_parent/obj_block_parent.yy",
+    "name":"obj_tile_parent",
+    "path":"objects/obj_tile_parent/obj_tile_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

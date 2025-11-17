@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_elevationsub2",
+  "%Name":"obj_tile_parent",
   "eventList":[],
   "managed":true,
-  "name":"obj_elevationsub2",
+  "name":"obj_tile_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Debug",
-    "path":"folders/Objects/Floor Tiles/Debug.yy",
+    "name":"Floor Tiles",
+    "path":"folders/Objects/Floor Tiles.yy",
   },
   "parentObjectId":{
-    "name":"obj_tile_parent",
-    "path":"objects/obj_tile_parent/obj_tile_parent.yy",
+    "name":"obj_obj_parent",
+    "path":"objects/obj_obj_parent/obj_obj_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_elevationsub2",
-    "path":"sprites/spr_elevationsub2/spr_elevationsub2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

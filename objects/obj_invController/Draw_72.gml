@@ -13,7 +13,7 @@ if(obj_snail.elevationLevel == 0){
 	
 	var foundOne = false;
 	
-	with(obj_block_parent){
+	with(obj_tile_parent){
 		if (position_meeting(mouse_x, mouse_y, id) &&
 			self.elevationLevel == obj_snail.elevationLevel)
 			foundOne = true;
