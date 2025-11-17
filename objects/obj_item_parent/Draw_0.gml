@@ -24,10 +24,10 @@ if(self.isSelfInteractable){
 	//and that prereqs for each cursorState is met (see begin step)
 	
 	if(obj_cursorStateController.cursorState=="normal"){
-		obj_cursorStateController.currentTooltipMessage += "[Left-click] Pick up "+self.name+"\n";
+		obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
 	} else if(obj_cursorStateController.cursorState=="item"){
 		COLOR = c_aqua;
-		obj_cursorStateController.currentTooltipMessage += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
+		obj_cursorStateController.tooltip_left += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
 	}
 } else {
 	//If not selecting item or out of reach, just return

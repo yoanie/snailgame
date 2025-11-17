@@ -16,7 +16,7 @@ for(var i = 0; i < ds_list_size(insts); i++){
 			//show_debug_message("found one! its above snail.");
 			self.elevationCandidate = inst;
 			//show_debug_message(self.elevationCandidate);
-			obj_cursorStateController.currentTooltipMessage += "[Right-click] Climb up\n";
+			obj_cursorStateController.tooltip_right += "[Right-click] Climb up\n";
 			
 			//event_user(0);
 			return;
@@ -34,7 +34,7 @@ for(var i = 0; i < ds_list_size(insts); i++){
 			//show_debug_message("found one! its below snail.");
 			self.elevationCandidate = inst;
 			//show_debug_message(self.elevationCandidate);
-			obj_cursorStateController.currentTooltipMessage += "[Right-click] Climb down\n";
+			obj_cursorStateController.tooltip_right += "[Right-click] Climb down\n";
 			
 			//event_user(0);
 			return;
