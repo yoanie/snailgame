@@ -1,3 +1,7 @@
+///@description Set up shaders
+shdDimParams = shader_get_uniform(shd_dim, "params");
+shdGhostParams = shader_get_uniform(shd_ghost, "params");
+
 uni_size = shader_get_uniform(sh_outline, "size");
 uni_thick = shader_get_uniform(sh_outline, "thick");
 uni_color = shader_get_uniform(sh_outline, "oColor");
