@@ -9,6 +9,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"internal_id","path":"objects/obj_item_parent/obj_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"item_combines_with","path":"objects/obj_item_parent/obj_item_parent.yy",},"resource":{"name":"obj_hairspray","path":"objects/obj_hairspray/obj_hairspray.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_hairspray",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"item_combines_into","path":"objects/obj_item_parent/obj_item_parent.yy",},"resource":{"name":"obj_makeshiftFlamethrower","path":"objects/obj_makeshiftFlamethrower/obj_makeshiftFlamethrower.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_makeshiftFlamethrower",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"item_combines_with_name","path":"objects/obj_item_parent/obj_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Hairspray",},
   ],
   "parent":{
     "name":"Items",

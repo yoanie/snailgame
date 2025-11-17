@@ -1,4 +1,4 @@
-///@description Apply elevation/outline shaders
+///@description Apply elevation/outline shaders & give tooltip if applicable
 
 //If item on different elevation, apply elevation shaders and return
 var deltaElevation = self.elevationLevel - obj_snail.elevationLevel;
@@ -15,20 +15,23 @@ if(deltaElevation != 0){
 	return;
 }
 
-//If not selecting item or out of reach, just return
-if(!self.isMouseHovering || distance_to_object(obj_snail) > obj_snail.itemReach){ 
-	draw_self(); 
-	return; 
-}
 
 var COLOR = c_yellow;
 
 //If pickup allowed, give player tooltip on action
-if(obj_cursorStateController.cursorState=="normal"){
-	obj_cursorStateController.currentTooltipMessage = "[Right-click] Pick up "+self.name;
-} else if(obj_cursorStateController.cursorState=="item"){
-	//implement combining items later
-	draw_self(); 
+if(self.isSelfInteractable){
+	//isSelfInteractable implies that item is within snail's item reach range
+	//and that prereqs for each cursorState is met (see begin step)
+	
+	if(obj_cursorStateController.cursorState=="normal"){
+		obj_cursorStateController.currentTooltipMessage += "[Left-click] Pick up "+self.name+"\n";
+	} else if(obj_cursorStateController.cursorState=="item"){
+		COLOR = c_aqua;
+		obj_cursorStateController.currentTooltipMessage += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
+	}
+} else {
+	//If not selecting item or out of reach, just return
+	draw_self();
 	return;
 }
 

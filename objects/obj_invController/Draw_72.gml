@@ -25,5 +25,5 @@ if(obj_snail.elevationLevel == 0){
 
 if (obj_cursorStateController.cursorState == "item" && self.canDropItemHere){
 		
-	obj_cursorStateController.currentTooltipMessage = "[Right-click] Drop "+self.inventory[self.selectedItemPointer].name;
+	obj_cursorStateController.currentTooltipMessage += "[Right-click] Drop "+self.inventory[self.selectedItemPointer].name+"\n";
 }
