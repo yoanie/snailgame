@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"node_step_stool",
+  "%Name":"node_shelf_storage",
   "eventList":[],
   "managed":true,
-  "name":"node_step_stool",
+  "name":"node_shelf_storage",
   "overriddenProperties":[],
   "parent":{
     "name":"Storage",

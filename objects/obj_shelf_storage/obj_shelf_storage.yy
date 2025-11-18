@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"node_step_stool",
+  "%Name":"obj_shelf_storage",
   "eventList":[],
   "managed":true,
-  "name":"node_step_stool",
+  "name":"obj_shelf_storage",
   "overriddenProperties":[],
   "parent":{
     "name":"Storage",
-    "path":"folders/Objects/Nodes/Storage.yy",
+    "path":"folders/Objects/HouseRooms/Storage.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_grid_parent",
+    "path":"objects/obj_grid_parent/obj_grid_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_node",
-    "path":"sprites/spr_node/spr_node.yy",
+    "name":"spr_shelf_storage",
+    "path":"sprites/spr_shelf_storage/spr_shelf_storage.yy",
   },
   "spriteMaskId":null,
   "visible":true,

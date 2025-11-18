@@ -6,8 +6,8 @@
   "name":"obj_desk",
   "overriddenProperties":[],
   "parent":{
-    "name":"Study",
-    "path":"folders/Objects/HouseRooms/Study.yy",
+    "name":"Bedroom",
+    "path":"folders/Objects/HouseRooms/Bedroom.yy",
   },
   "parentObjectId":{
     "name":"obj_grid_parent",

@@ -6,8 +6,8 @@
   "name":"obj_step_stool",
   "overriddenProperties":[],
   "parent":{
-    "name":"Garage",
-    "path":"folders/Objects/HouseRooms/Garage.yy",
+    "name":"Storage",
+    "path":"folders/Objects/HouseRooms/Storage.yy",
   },
   "parentObjectId":{
     "name":"obj_grid_parent",

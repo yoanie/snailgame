@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Garage",
-    "path":"folders/Sprites/HouseRooms/Garage.yy",
+    "name":"Storage",
+    "path":"folders/Sprites/HouseRooms/Storage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
