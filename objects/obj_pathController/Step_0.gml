@@ -1,4 +1,3 @@
-/*
 with(obj_human) {
 	var snail_direction = point_direction(self.x, self.y, obj_snail.x, obj_snail.y);
 	
@@ -18,4 +17,3 @@ with(obj_human) {
 	moveTo(obj_snail, self.moveSpeed);
 	self.state = 1;
 }
-*/
