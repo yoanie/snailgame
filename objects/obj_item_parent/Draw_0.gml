@@ -1,13 +1,53 @@
-///@description Apply outline shaders
+///@description Apply elevation/outline shaders & give tooltip if applicable
 
-if(!self.isMouseHovering || distance_to_object(obj_snail) > 64){ 
-	draw_self(); 
-	return; 
+//If item on different elevation, apply elevation shaders and return
+var deltaElevation = self.elevationLevel - obj_snail.elevationLevel;
+if(deltaElevation != 0){
+	if(deltaElevation > 0){
+		shader_set(shd_ghost);
+		shader_set_uniform_f(shdGhostParams, 1/(1+deltaElevation) );
+	} else if(deltaElevation < 0){
+		shader_set(shd_dim);
+		shader_set_uniform_f(shdDimParams, (1.75) * (1/(1-deltaElevation)) );
+	}
+	draw_self();
+	shader_reset();
+	return;
 }
+
+
+
+var ALPHA = .4;
+var COLOR = c_yellow;
+
+if(self.isSelfInteractable){
+	if(distance_to_object(obj_snail) <= obj_snail.itemReach){
+		ALPHA = 1.0;
+	}
+	
+	if(obj_cursorStateController.cursorState=="normal"){
+		COLOR = c_aqua;
+	}
+} else {
+	draw_self();
+	return;
+}
+
+
+//If pickup allowed, give player tooltip on action
+if(self.isMouseHovering && 
+	distance_to_object(obj_snail) <= obj_snail.itemReach){
+	
+	if(obj_cursorStateController.cursorState=="item"){
+		obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
+	} else if(obj_cursorStateController.cursorState=="normal"){
+		obj_cursorStateController.tooltip_left += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
+	}
+}
+
 
 //SHADER IS BY MATHAROO
 var THICKNESS = 4;
-var COLOR = c_yellow;
 var ACCURACY = 16;
 var TOLERANCE = 0;
 
@@ -24,7 +64,7 @@ shader_set_uniform_f(uni_size, _w, _h);
 
 shader_set_uniform_f(uni_thick, THICKNESS);
 
-shader_set_uniform_f(uni_color, color_get_red(COLOR)/255, color_get_green(COLOR)/255, color_get_blue(COLOR)/255);
+shader_set_uniform_f(uni_color, color_get_red(COLOR)/255, color_get_green(COLOR)/255, color_get_blue(COLOR)/255, ALPHA);
 
 var acc = ACCURACY;
 
