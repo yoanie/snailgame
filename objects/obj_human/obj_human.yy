@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_human_frontStatic",
-    "path":"sprites/spr_human_frontStatic/spr_human_frontStatic.yy",
+    "name":"spr_human_front_s",
+    "path":"sprites/spr_human_front_s/spr_human_front_s.yy",
   },
   "spriteMaskId":null,
   "visible":true,
