@@ -1,3 +1,5 @@
+self.depth = 0;
+
 event_inherited();
 
 var hitbox = instance_create_layer(self.x, self.y, self.layer, obj_hitbox_circle);

@@ -14,25 +14,25 @@ var current_direction = point_direction(self.prev_x, self.prev_y, self.x, self.y
 
 // Moving right
 if(current_direction > 315 || current_direction <= 45) {
-	self.sprite_index = spr_human_side_s;
+	self.sprite_index = spr_human_side_a;
 	self.image_xscale = 1;
 	self.direction = 0;
 
 // Moving up
 } else if(current_direction > 45 && current_direction <= 135) {
-	self.sprite_index = spr_human_back_s;
+	self.sprite_index = spr_human_back_a;
 	self.image_xscale = 1;
 	self.direction = 90;
 
 // Moving left
 } else if(current_direction > 135 && current_direction <= 225) {
-	self.sprite_index = spr_human_side_s;
+	self.sprite_index = spr_human_side_a;
 	self.image_xscale = -1;
 	self.direction = 180;
 	
 // Moving down
 } else {
-	self.sprite_index = spr_human_front_s;
+	self.sprite_index = spr_human_front_a;
 	self.image_xscale = 1;
 	self.direction = 270;
 }
