@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"node_step_stool",
+  "%Name":"obj_shelf_bedroom",
   "eventList":[],
   "managed":true,
-  "name":"node_step_stool",
+  "name":"obj_shelf_bedroom",
   "overriddenProperties":[],
   "parent":{
-    "name":"Storage",
-    "path":"folders/Objects/Nodes/Storage.yy",
+    "name":"Bedroom",
+    "path":"folders/Objects/HouseRooms/Bedroom.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_node",
-    "path":"sprites/spr_node/spr_node.yy",
+    "name":"spr_shelf_bedroom",
+    "path":"sprites/spr_shelf_bedroom/spr_shelf_bedroom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

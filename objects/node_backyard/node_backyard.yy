@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"node_step_stool",
+  "%Name":"node_backyard",
   "eventList":[],
   "managed":true,
-  "name":"node_step_stool",
+  "name":"node_backyard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Storage",
-    "path":"folders/Objects/Nodes/Storage.yy",
+    "name":"Outside",
+    "path":"folders/Objects/Nodes/Outside.yy",
   },
   "parentObjectId":null,
   "persistent":false,

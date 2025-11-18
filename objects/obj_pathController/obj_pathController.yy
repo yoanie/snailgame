@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"node_step_stool",
-  "eventList":[],
+  "%Name":"obj_pathController",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"node_step_stool",
+  "name":"obj_pathController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Storage",
-    "path":"folders/Objects/Nodes/Storage.yy",
+    "name":"Meta",
+    "path":"folders/Objects/Meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_node",
-    "path":"sprites/spr_node/spr_node.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

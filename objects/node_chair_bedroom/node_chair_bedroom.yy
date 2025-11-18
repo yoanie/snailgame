@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"node_step_stool",
+  "%Name":"node_chair_bedroom",
   "eventList":[],
   "managed":true,
-  "name":"node_step_stool",
+  "name":"node_chair_bedroom",
   "overriddenProperties":[],
   "parent":{
-    "name":"Storage",
-    "path":"folders/Objects/Nodes/Storage.yy",
+    "name":"Bedroom",
+    "path":"folders/Objects/Nodes/Bedroom.yy",
   },
   "parentObjectId":null,
   "persistent":false,

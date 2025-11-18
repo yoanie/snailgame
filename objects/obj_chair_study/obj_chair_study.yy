@@ -6,8 +6,8 @@
   "name":"obj_chair_study",
   "overriddenProperties":[],
   "parent":{
-    "name":"Study",
-    "path":"folders/Objects/HouseRooms/Study.yy",
+    "name":"Bedroom",
+    "path":"folders/Objects/HouseRooms/Bedroom.yy",
   },
   "parentObjectId":{
     "name":"obj_grid_parent",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chair_study",
-    "path":"sprites/spr_chair_study/spr_chair_study.yy",
+    "name":"spr_chair_bedroom",
+    "path":"sprites/spr_chair_bedroom/spr_chair_bedroom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spr_checkTime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spr_checkTime",
+  "parent":{
+    "name":"Human",
+    "path":"folders/Scripts/Human.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
