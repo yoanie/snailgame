@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_human",
-    "path":"sprites/spr_human/spr_human.yy",
+    "name":"spr_human_front_s",
+    "path":"sprites/spr_human_front_s/spr_human_front_s.yy",
   },
   "spriteMaskId":null,
   "visible":true,
