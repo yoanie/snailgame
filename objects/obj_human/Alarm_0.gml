@@ -1,0 +1,1 @@
+self.state = 0;
