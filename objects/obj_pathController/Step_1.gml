@@ -1,7 +1,7 @@
 with(obj_human) {
 	var snail_direction = point_direction(self.x, self.y, obj_snail.x, obj_snail.y);
 	
-	if(collision_line(self.x, self.y, obj_snail.x, obj_snail.y, obj_wall_parent, false, true) != noone) {
+	if(collision_line(self.x, self.y, obj_snail.x, obj_snail.y, obj_wall_parent, false, true) != noone || collision_line(self.x, self.y, obj_snail.x, obj_snail.y, obj_grid_parent, false, true) != noone) {
 		return;
 	}
 	
