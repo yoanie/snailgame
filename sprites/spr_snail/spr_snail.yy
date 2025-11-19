@@ -36,7 +36,7 @@
   ],
   "name":"spr_snail",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Snails",
     "path":"folders/Sprites/Snails.yy",
@@ -129,7 +129,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":36,
+    "xorigin":33,
     "yorigin":32,
   },
   "swatchColours":null,

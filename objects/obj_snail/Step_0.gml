@@ -42,19 +42,26 @@ var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevat
 var newX = self.x + velocityVector[0];
 var newY = self.y + velocityVector[1];
 
-while(place_meeting(newX, self.y, obj_wall_parent)) {
-	if(isRight) {
-		newX -= 1;
-	} else if(isLeft) {
-		newX += 1;
-	}
-}
 
-while(place_meeting(self.x, newY, obj_wall_parent)) {
-	if(isUp) {
-		newY += 1;
-	} else if(isDown) {
-		newY -= 1;
+var isTouchingWall = isOneOffLedgeOrInWall(newX-mouse_x, newY-mouse_y, cornersX, cornersY, eyelevel);
+
+show_debug_message("touchingwall: "+string(isTouchingWall));
+
+if(elevationLevel == 0){
+	while(place_meeting(newX, self.y, obj_wall_parent)) {
+		if(isRight) {
+			newX -= 1;
+		} else if(isLeft) {
+			newX += 1;
+		}
+	}
+
+	while(place_meeting(newX, newY, obj_wall_parent)) {
+		if(isUp) {
+			newY += 1;
+		} else if(isDown) {
+			newY -= 1;
+		}
 	}
 }
 

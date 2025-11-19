@@ -8,7 +8,7 @@ function snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevation){
 
 	for(var t = 0; t < 4; t++){
 		//test if off ledge if player moves by xVelocity and yVelocity
-		cornersOffLedge[t] = isTouchingNothing(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
+		cornersOffLedge[t] = isOnLedgeAndNotInWall(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
 	}
 
 	//show_debug_message(cornersOffLedge);
@@ -20,7 +20,7 @@ function snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevation){
 					(cornersOffLedge[2] && cornersOffLedge[3] ? -1 : 0));
 		for(var t = 0; t < 4; t++){
 			//test if off ledge if player moves by xVelocity and yVelocity
-			cornersOffLedge[t] = isTouchingNothing(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
+			cornersOffLedge[t] = isOnLedgeAndNotInWall(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
 		}
 	}
 	
@@ -31,7 +31,7 @@ function snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevation){
 					(cornersOffLedge[1] && cornersOffLedge[2] ? -1 : 0));
 		for(var t = 0; t < 4; t++){
 			//test if off ledge if player moves by xVelocity and yVelocity
-			cornersOffLedge[t] = isTouchingNothing(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
+			cornersOffLedge[t] = isOnLedgeAndNotInWall(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
 		}
 	}
 	
@@ -86,7 +86,7 @@ function snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevation){
 		
 		for(var t = 0; t < 4; t++){
 			//test if off ledge if player moves by xVelocity and yVelocity
-			cornersOffLedge[t] = isTouchingNothing(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
+			cornersOffLedge[t] = isOnLedgeAndNotInWall(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
 		}
 	}
 	
@@ -101,8 +101,21 @@ function snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevation){
 	return result;
 }
 
-function isTouchingNothing(xVal, yVal, list){
+function isOnLedgeAndNotInWall(xVal, yVal, list){
 	var insts = ds_list_create();
+	instance_position_list(xVal, yVal, list, insts, false);	
+	
+	for(var i = 0; i < ds_list_size(insts); i++){
+		var object = insts[| i];
+		if(object != obj_tile_parent){
+			ds_list_destroy(insts); //must have this line, otherwise memory issues
+			return false;
+		}
+	}
+	ds_list_destroy(insts); //must have this line, otherwise memory issues
+	return true;
+	
+	/*var insts = ds_list_create();
 	instance_position_list(xVal, yVal, list, insts, false);	
 	var result = ds_list_size(insts);
 	ds_list_destroy(insts); //must have this line, otherwise memory issues
@@ -110,5 +123,20 @@ function isTouchingNothing(xVal, yVal, list){
 	if(result == 0){
 		return true;
 	}
-	return false;
+	return false;*/
+}
+
+function isOneOffLedgeOrInWall(xVelocity, yVelocity, cornersX, cornersY, elevation){
+	var result = false;
+
+	if(elevation != 0){
+		for(var t = 0; t < 4; t++){
+			//test if off ledge if player moves by xVelocity and yVelocity
+			result = result || !isOnLedgeAndNotInWall(cornersX[t]+xVelocity, cornersY[t]+yVelocity, eyelevel);
+		}
+	}
+	
+
+	
+	return result;
 }
