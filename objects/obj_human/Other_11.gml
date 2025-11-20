@@ -23,6 +23,7 @@ switch (self.hitboxTouchingId){
 		break;
 	case 25:
 		self.state = 2;
+		self.hitbox.affectsSnail = false;
 		
 		with(obj_banana_peel) {
 			instance_destroy(hitbox);
