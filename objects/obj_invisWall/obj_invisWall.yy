@@ -9,12 +9,12 @@
   "name":"obj_invisWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Walls.yy",
+    "name":"Block",
+    "path":"folders/Objects/Block.yy",
   },
   "parentObjectId":{
-    "name":"obj_wall_parent",
-    "path":"objects/obj_wall_parent/obj_wall_parent.yy",
+    "name":"obj_block_parent",
+    "path":"objects/obj_block_parent/obj_block_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
