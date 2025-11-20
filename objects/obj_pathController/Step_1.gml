@@ -1,5 +1,5 @@
 with(obj_human) {
-	if(self.state == 2) {
+	if(self.state == 2 || obj_menu_pause.menuIsUp) {
 		return;
 	}
 	

@@ -1,4 +1,4 @@
-if(self.state == 1 ) {
+if(self.state == 1 || obj_menu_pause.menuIsUp) {
 	return;
 }
 

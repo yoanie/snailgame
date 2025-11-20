@@ -21,4 +21,15 @@ if(menuIsUp){
 	resumebtn.allegiantTo = self;
 	exitbtn = instance_create_layer(view_get_wport(0)/2, 7*view_get_hport(0)/10, "GUI", btn_menu_quit);
 	exitbtn.allegiantTo = self;
+	
+	obj_human.path_speed = 0;
+	obj_human.image_speed = 0;
+	
+	obj_snail.image_speed = 0;
+} else {
+	obj_human.path_speed = obj_human.moveSpeed;
+	obj_human.image_speed = 1;
+	
+	obj_snail.image_speed = 1;
 }
+
