@@ -38,35 +38,74 @@ var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom
 //Unless elevationLevel = 0 (for now)
 var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevationLevel);
 
-//show_debug_message("new xVel: " + string(xVelocity) + ", new yVel: "+ string(yVelocity));
-var newX = self.x + velocityVector[0];
-var newY = self.y + velocityVector[1];
 
-
-var isTouchingWall = isOneOffLedgeOrInWall(newX-mouse_x, newY-mouse_y, cornersX, cornersY, eyelevel);
-
-show_debug_message("touchingwall: "+string(isTouchingWall));
 
 if(elevationLevel == 0){
-	while(place_meeting(newX, self.y, obj_wall_parent)) {
+	while(place_meeting(self.x + velocityVector[0], self.y, obj_wall_parent)) {
 		if(isRight) {
-			newX -= 1;
+			velocityVector[0] -= 1;
 		} else if(isLeft) {
-			newX += 1;
+			velocityVector[0] += 1;
 		}
 	}
 
-	while(place_meeting(newX, newY, obj_wall_parent)) {
+	while(place_meeting(self.x + velocityVector[0], self.y + velocityVector[1], obj_wall_parent)) {
 		if(isUp) {
-			newY += 1;
+			velocityVector[1] += 1;
 		} else if(isDown) {
-			newY -= 1;
+			velocityVector[1] -= 1;
 		}
+	}
+} else {
+	var isTouchingWall = elevationBasedWallDetectionGeneral(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
+	//show_debug_message("touchingwall: "+string(isTouchingWall));
+	
+	if(isTouchingWall){
+		var order;
+		if(velocityVector[0] != 0 && velocityVector[1] == 0){
+			order = ["left", "right", "top", "bottom"];
+		} else if(velocityVector[0] == 0 && velocityVector[1] != 0){
+			order = ["top", "bottom", "left", "right"];
+		} else {
+			var checkOrder = shouldICheckSidesFirst(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
+			show_debug_message(checkOrder);
+			if(checkOrder){
+				order = ["left", "right", "top", "bottom"];
+			} else {
+				order = ["top", "bottom", "left", "right"];
+			}
+		}
+		
+		/*
+		if(place_meeting(self.bbox_left, y, obj_snail)) {
+			self.x += obj_snail.moveSpeed
+		} else if(place_meeting(self.bbox_right, y, obj_snail)) {
+			self.x -= obj_snail.moveSpeed
+		} else if(place_meeting(x, self.bbox_top, obj_snail)) {
+			self.y += obj_snail.moveSpeed
+		} else if(place_meeting(x, self.bbox_bottom, obj_snail)) {
+			self.y -= obj_snail.moveSpeed
+		}
+		*/
+		
+		for(var t = 0; t < 4; t++){
+			while(elevationBasedWallDetectionDirection(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel
+				, order[t])){
+			
+				if(order[t] == "left"){ velocityVector[0] += 1; }
+				else if(order[t] == "right"){ velocityVector[0] -= 1; }
+				else if(order[t] == "top"){ velocityVector[1] += 1; }
+				else if(order[t] == "bottom"){ velocityVector[1] -= 1; }
+			}
+		}
+		
 	}
 }
 
-self.x = newX;
-self.y = newY;
+
+
+self.x += velocityVector[0];
+self.y += velocityVector[1];
 
 //look left/right
 //may cause hitbox issue? idk havent looked into yet

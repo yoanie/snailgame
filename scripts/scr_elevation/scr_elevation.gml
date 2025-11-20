@@ -29,7 +29,7 @@ function findLayerNameOfElevationLevel(newElevationInt){
 }
 
 function reidentifyElevationObjects(currentElevation){
-	show_debug_message(	currentElevation );
+	//show_debug_message(	currentElevation );
 	layerName = findLayerNameOfElevationLevel(currentElevation);
 	if(layerName != "oob"){
 		return reidentifyElevationObjectsByLayerName(layerName);

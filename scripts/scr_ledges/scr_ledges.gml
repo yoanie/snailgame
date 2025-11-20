@@ -140,3 +140,109 @@ function isOneOffLedgeOrInWall(xVelocity, yVelocity, cornersX, cornersY, elevati
 	
 	return result;
 }
+function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, list){
+	//prereq: snail is touching wall on specified side
+
+
+
+	var insts = ds_list_create();
+	for(var t = 0; t < 4; t++){
+		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, false);	
+	
+		for(var i = 0; i < ds_list_size(insts); i++){
+			var wall = insts[| i];
+			if(wall.object_index == obj_invisWall){
+				ds_list_destroy(insts);
+			
+				var topsPermeance = 0;
+				if(yVelocity > 0){
+					topsPermeance = self.y + self.bbox_bottom - wall.y - wall.bbox_top;
+				} else if(yVelocity < 0){
+					topsPermeance = wall.y + wall.bbox_bottom - self.y - self.bbox_top;
+				}
+			
+				var sidesPermeance = 0;
+				if(xVelocity > 0){
+					sidesPermeance = self.x + self.bbox_right - wall.x - wall.bbox_left;
+				} else if(xVelocity < 0){
+					sidesPermeance = wall.x + wall.bbox_right - self.x - self.bbox_left;
+				}
+				
+				/*
+				show_debug_message("hi\n	topsPer: "+string(topsPermeance));
+				show_debug_message("	sidePer: "+string(sidesPermeance));
+				show_debug_message(string(self.x)+" "+string(self.bbox_left)+" "+string(self.bbox_right) );
+				show_debug_message(string(wall.x)+" "+string(wall.bbox_left)+" "+string(wall.bbox_right) );
+				*/
+			
+				return sidesPermeance < topsPermeance;
+			}
+		}
+		ds_list_clear(insts);
+	}
+	ds_list_destroy(insts); //must have this line, otherwise memory issues
+	
+	//ehhhhhhh
+	return false;
+}
+
+//for use for snail externally
+function elevationBasedWallDetectionDirection(xVelocity, yVelocity, cornersX, cornersY, list, side){
+	//show_debug_message(list)
+	
+	var cornersToCheck = [0,1];
+	if(side=="bottom"){ cornersToCheck = [2,3]; }
+	else if(side=="left"){ cornersToCheck = [0,3]; }
+	else if(side=="right"){ cornersToCheck = [1,2]; }
+	
+	var result = false;
+	var insts = ds_list_create();
+
+	for(var t = 0; t < 2; t++){
+		//test if in wall if player moves by xVelocity and yVelocity
+		instance_position_list(cornersX[cornersToCheck[t]]+xVelocity, cornersY[cornersToCheck[t]]+yVelocity, list, insts, false);	
+		var temp = false;
+	
+		for(var i = 0; i < ds_list_size(insts); i++){
+			var inst = insts[| i];
+			if(inst.object_index == obj_invisWall){
+				
+				temp = true;
+			}
+		}
+		ds_list_clear(insts);
+			
+		result = temp || result;
+	}
+	ds_list_destroy(insts); //must have this line, otherwise memory issues
+	
+	return result;
+}
+
+//for use for snail externally
+function elevationBasedWallDetectionGeneral(xVelocity, yVelocity, cornersX, cornersY, list){
+	//show_debug_message(list
+	
+	var result = false;
+	var insts = ds_list_create();
+
+	for(var t = 0; t < 4; t++){
+		//test if in wall if player moves by xVelocity and yVelocity
+		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, false);	
+		var temp = false;
+	
+		for(var i = 0; i < ds_list_size(insts); i++){
+			var inst = insts[| i];
+			if(inst.object_index == obj_invisWall){
+				
+				temp = true;
+			}
+		}
+		ds_list_clear(insts);
+			
+		result = temp || result;
+	}
+	ds_list_destroy(insts); //must have this line, otherwise memory issues
+	
+	return result;
+}
