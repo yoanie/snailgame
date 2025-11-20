@@ -21,4 +21,14 @@ switch (self.hitboxTouchingId){
 		}
 		self.state = -1;
 		break;
+	case 25:
+		self.state = 2;
+		
+		with(obj_banana_peel) {
+			instance_destroy(hitbox);
+			instance_destroy(self);
+		}
+		
+		alarm[0] = 4 * game_get_speed(gamespeed_fps); 
+		break;
 }
