@@ -140,11 +140,26 @@ function isOneOffLedgeOrInWall(xVelocity, yVelocity, cornersX, cornersY, elevati
 	
 	return result;
 }
-function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, list){
-	//prereq: snail is touching wall on specified side
 
+function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, inst){
+	show_debug_message("hi");
+	
+	var topsPermeance = findTopsPermeance(self, xVelocity, yVelocity, inst);
+	var sidesPermeance = findSidePermeance(self, xVelocity, yVelocity, inst);
+				
+	show_debug_message(string(self.x)+" "+string(self.bbox_left)+" "+string(self.bbox_right) );
+	show_debug_message(string(inst.x)+" "+string(inst.bbox_left)+" "+string(inst.bbox_right) );
+	
+	if(sidesPermeance<0){
+		return true;
+	} else if(topsPermeance<0){
+		return false;
+	}
+	//uhhhhhhhh
+	return sidesPermeance < topsPermeance;
+}
 
-
+function findWallThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, list){
 	var insts = ds_list_create();
 	for(var t = 0; t < 4; t++){
 		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, false);	
@@ -153,29 +168,8 @@ function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, list){
 			var wall = insts[| i];
 			if(wall.object_index == obj_invisWall){
 				ds_list_destroy(insts);
-			
-				var topsPermeance = 0;
-				if(yVelocity > 0){
-					topsPermeance = self.y + self.bbox_bottom - wall.y - wall.bbox_top;
-				} else if(yVelocity < 0){
-					topsPermeance = wall.y + wall.bbox_bottom - self.y - self.bbox_top;
-				}
-			
-				var sidesPermeance = 0;
-				if(xVelocity > 0){
-					sidesPermeance = self.x + self.bbox_right - wall.x - wall.bbox_left;
-				} else if(xVelocity < 0){
-					sidesPermeance = wall.x + wall.bbox_right - self.x - self.bbox_left;
-				}
-				
-				/*
-				show_debug_message("hi\n	topsPer: "+string(topsPermeance));
-				show_debug_message("	sidePer: "+string(sidesPermeance));
-				show_debug_message(string(self.x)+" "+string(self.bbox_left)+" "+string(self.bbox_right) );
-				show_debug_message(string(wall.x)+" "+string(wall.bbox_left)+" "+string(wall.bbox_right) );
-				*/
-			
-				return sidesPermeance < topsPermeance;
+
+				return wall;
 			}
 		}
 		ds_list_clear(insts);
@@ -183,7 +177,33 @@ function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, list){
 	ds_list_destroy(insts); //must have this line, otherwise memory issues
 	
 	//ehhhhhhh
-	return false;
+	return pointer_null;
+}
+
+function findSidePermeance(plyr, xVelocity, yVelocity, inst){
+	var sidesPermeance = 0;
+	if(xVelocity > 0){
+		//sidesPermeance = plyr.sprite_xoffset + plyr.bbox_right - (inst.sprite_xoffset - inst.bbox_left);
+		sidesPermeance = plyr.bbox_right - (inst.bbox_left);
+	} else if(xVelocity < 0){
+		//sidesPermeance = inst.sprite_xoffset + inst.bbox_right - (plyr.sprite_xoffset - plyr.bbox_left);
+		sidesPermeance = inst.bbox_right - (plyr.bbox_left);
+	}
+	show_debug_message("	sidePer: "+string(sidesPermeance));
+	return sidesPermeance;
+}
+
+function findTopsPermeance(plyr, xVelocity, yVelocity, inst){
+	var topsPermeance = 0;
+	if(yVelocity > 0){
+		//topsPermeance = plyr.sprite_yoffset + plyr.bbox_bottom - (inst.sprite_yoffset - inst.bbox_top);
+		topsPermeance = plyr.bbox_bottom - (inst.bbox_top);
+	} else if(yVelocity < 0){
+		//topsPermeance = inst.sprite_yoffset + inst.bbox_bottom - (plyr.sprite_yoffset - plyr.bbox_top);
+		topsPermeance = inst.bbox_bottom - (plyr.bbox_top);
+	}
+	show_debug_message("	topsPer: "+string(topsPermeance));
+	return topsPermeance;
 }
 
 //for use for snail externally
@@ -220,7 +240,7 @@ function elevationBasedWallDetectionDirection(xVelocity, yVelocity, cornersX, co
 }
 
 //for use for snail externally
-function elevationBasedWallDetectionGeneral(xVelocity, yVelocity, cornersX, cornersY, list){
+function elevationBasedWallDetectionPreliminary(xVelocity, yVelocity, cornersX, cornersY, list){
 	//show_debug_message(list
 	
 	var result = false;
