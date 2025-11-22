@@ -150,6 +150,12 @@ function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, inst){
 	show_debug_message(string(self.x)+" "+string(self.bbox_left)+" "+string(self.bbox_right) );
 	show_debug_message(string(inst.x)+" "+string(inst.bbox_left)+" "+string(inst.bbox_right) );
 	
+	if(sidesPermeance==0){
+		return true;
+	} else if(topsPermeance==0){
+		return false;
+	}
+	
 	if(sidesPermeance<0){
 		return true;
 	} else if(topsPermeance<0){
@@ -177,6 +183,7 @@ function findWallThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, l
 	ds_list_destroy(insts); //must have this line, otherwise memory issues
 	
 	//ehhhhhhh
+	//show_debug_message("findWallThatsTouching messed up");
 	return pointer_null;
 }
 
@@ -184,10 +191,12 @@ function findSidePermeance(plyr, xVelocity, yVelocity, inst){
 	var sidesPermeance = 0;
 	if(xVelocity > 0){
 		//sidesPermeance = plyr.sprite_xoffset + plyr.bbox_right - (inst.sprite_xoffset - inst.bbox_left);
-		sidesPermeance = plyr.bbox_right - (inst.bbox_left);
+		sidesPermeance = plyr.bbox_right - inst.bbox_left;
 	} else if(xVelocity < 0){
 		//sidesPermeance = inst.sprite_xoffset + inst.bbox_right - (plyr.sprite_xoffset - plyr.bbox_left);
-		sidesPermeance = inst.bbox_right - (plyr.bbox_left);
+		sidesPermeance = inst.bbox_right - plyr.bbox_left;
+	} else {
+		sidesPermeance = min(plyr.bbox_right - inst.bbox_left, inst.bbox_right - plyr.bbox_left);
 	}
 	show_debug_message("	sidePer: "+string(sidesPermeance));
 	return sidesPermeance;
@@ -197,10 +206,12 @@ function findTopsPermeance(plyr, xVelocity, yVelocity, inst){
 	var topsPermeance = 0;
 	if(yVelocity > 0){
 		//topsPermeance = plyr.sprite_yoffset + plyr.bbox_bottom - (inst.sprite_yoffset - inst.bbox_top);
-		topsPermeance = plyr.bbox_bottom - (inst.bbox_top);
+		topsPermeance = plyr.bbox_bottom - inst.bbox_top;
 	} else if(yVelocity < 0){
 		//topsPermeance = inst.sprite_yoffset + inst.bbox_bottom - (plyr.sprite_yoffset - plyr.bbox_top);
-		topsPermeance = inst.bbox_bottom - (plyr.bbox_top);
+		topsPermeance = inst.bbox_bottom - plyr.bbox_top;
+	} else {
+		topsPermeance = min(plyr.bbox_bottom - inst.bbox_top, inst.bbox_bottom - plyr.bbox_top);
 	}
 	show_debug_message("	topsPer: "+string(topsPermeance));
 	return topsPermeance;
