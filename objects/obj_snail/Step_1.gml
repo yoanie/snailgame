@@ -42,7 +42,7 @@ var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevat
 
 
 
-if(elevationLevel == 0){
+/*if(elevationLevel == 0){
 	while(place_meeting(self.x + velocityVector[0], self.y, obj_wall_parent)) {
 		if(isRight) {
 			velocityVector[0] -= 1;
@@ -58,7 +58,7 @@ if(elevationLevel == 0){
 			velocityVector[1] -= 1;
 		}
 	}
-} else {
+} else {*/
 	var isTouchingWall = elevationBasedWallDetectionPreliminary(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
 	
 	var wall = findWallThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
@@ -139,7 +139,7 @@ if(elevationLevel == 0){
 		show_debug_message(velocityVector);
 		show_debug_message("end");
 	}		
-}
+//}
 
 //do snug ledges again
 velocityVector = snugLedges(velocityVector[0], velocityVector[1], cornersX, cornersY, elevationLevel);
