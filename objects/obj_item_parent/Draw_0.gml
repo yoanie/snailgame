@@ -1,4 +1,4 @@
-///@description Apply elevation/outline shaders & give tooltip if applicable
+///@description Apply elevation/outline shaders
 
 //If item on different elevation, apply elevation shaders and return
 var deltaElevation = self.elevationLevel - obj_snail.elevationLevel;
@@ -25,7 +25,9 @@ if(self.isSelfInteractable){
 		ALPHA = 1.0;
 	}
 	
-	if(obj_cursorStateController.cursorState=="normal"){
+	if(obj_invController.inventory[obj_invController.selectedItemPointer] != pointer_null &&
+		obj_invController.inventory[obj_invController.selectedItemPointer].item_combines_with_name == self.name){
+		
 		COLOR = c_aqua;
 	}
 } else {
@@ -34,16 +36,7 @@ if(self.isSelfInteractable){
 }
 
 
-//If pickup allowed, give player tooltip on action
-if(self.isMouseHovering && 
-	distance_to_object(obj_snail) <= obj_snail.itemReach){
-	
-	if(obj_cursorStateController.cursorState=="item"){
-		obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
-	} else if(obj_cursorStateController.cursorState=="normal"){
-		obj_cursorStateController.tooltip_left += "[Left-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
-	}
-}
+
 
 
 //SHADER IS BY MATHAROO
