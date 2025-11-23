@@ -59,12 +59,21 @@ var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevat
 		}
 	}
 } else {*/
-	var isTouchingWall = elevationBasedWallDetectionPreliminary(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
+	//var isTouchingWall = elevationBasedWallDetectionPreliminary(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
 	
 	var wall = findWallThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
-	isTouchingWall = isTouchingWall && findTopsPermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
-	isTouchingWall = isTouchingWall && findSidePermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
+	if(wall==pointer_null){
+		var wallLayerElements = layer_get_all_elements("Walls");
+		show_debug_message(wallLayerElements);
+		wall = findWallThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, wallLayerElements);
+	}
+	show_debug_message(wall);
 	
+	var isTouchingWall = false;
+	if(wall!=pointer_null){
+		isTouchingWall = findTopsPermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
+		isTouchingWall = isTouchingWall && findSidePermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
+	}
 	//show_debug_message("touchingwall: "+string(isTouchingWall));
 	
 	if(isTouchingWall){

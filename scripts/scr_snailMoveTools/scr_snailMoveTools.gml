@@ -25,18 +25,19 @@ function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, inst){
 function findWallThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, list){
 	var insts = ds_list_create();
 	for(var t = 0; t < 4; t++){
-		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, false);	
-	
+		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, true);	
+		
 		for(var i = 0; i < ds_list_size(insts); i++){
 			var wall = insts[| i];
-			if(wall.object_index == obj_invisWall){
+			if(object_is_ancestor(wall.object_index, obj_wall_parent)){
+				
 				ds_list_destroy(insts);
-
 				return wall;
 			}
 		}
 		ds_list_clear(insts);
 	}
+	
 	ds_list_destroy(insts); //must have this line, otherwise memory issues
 	
 	//ehhhhhhh
@@ -88,7 +89,7 @@ function elevationBasedWallDetectionPreliminary(xVelocity, yVelocity, cornersX, 
 	
 		for(var i = 0; i < ds_list_size(insts); i++){
 			var inst = insts[| i];
-			if(inst.object_index == obj_invisWall){
+			if(object_is_ancestor(inst.object_index, obj_wall_parent)){
 				
 				temp = true;
 			}

@@ -49,10 +49,24 @@ for(var i = 0; i < ds_list_size(insts); i++){
 //as a last resort, check if snail wants to get down. here, we check if its not a piece of furniture.
 if(elevationLevel == 1){
 
-obj_cursorStateController.tooltip_right += "[Right-click] Climb down\n";
-self.elevationCandidateLevel = 0;
+ds_list_clear(insts);
+instance_position_list(mouse_x, mouse_y, below, insts, true);
+
+
+	if (ds_list_size(insts)==0){
+			
+		//show_debug_message("found one! its below snail.");
+		self.elevationCandidateLevel = 0;
+		
+		//show_debug_message(self.elevationCandidate);
+		obj_cursorStateController.tooltip_right += "[Right-click] Climb down\n";
+			
+		ds_list_destroy(insts);
+		return;
+	}
+}
+
 ds_list_destroy(insts);
-return;
 
 /*
 ds_list_clear(insts);
@@ -75,6 +89,6 @@ for(var i = 0; i < ds_list_size(insts); i++){
 	}
 }
 */
-}
+
 
 //show_debug_message("found nothing! its a sad day for snail. :(");

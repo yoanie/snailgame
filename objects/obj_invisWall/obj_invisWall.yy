@@ -9,8 +9,8 @@
   "name":"obj_invisWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Block",
-    "path":"folders/Objects/Block.yy",
+    "name":"Walls",
+    "path":"folders/Objects/Walls.yy",
   },
   "parentObjectId":{
     "name":"obj_wall_parent",
@@ -32,7 +32,6 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"collisionId","filters":[],"listItems":[],"multiselect":false,"name":"collisionId","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"elevationLevel","filters":[],"listItems":[],"multiselect":false,"name":"elevationLevel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"isPushable","filters":[],"listItems":[],"multiselect":false,"name":"isPushable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
