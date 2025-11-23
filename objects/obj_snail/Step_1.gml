@@ -104,7 +104,7 @@ if(elevationLevel == 0){
 			
 			show_debug_message("tops moveF aft: "+string(moveFactor))
 			if(wall.isPushable){
-				wall.x -= moveFactor;
+				wall.y += moveFactor;
 			} else {
 				velocityVector[1] -= moveFactor//sign(velocityVector[1])*self.moveSpeed
 			}
@@ -140,6 +140,9 @@ if(elevationLevel == 0){
 		show_debug_message("end");
 	}		
 }
+
+//do snug ledges again
+velocityVector = snugLedges(velocityVector[0], velocityVector[1], cornersX, cornersY, elevationLevel);
 
 
 self.x += velocityVector[0];
