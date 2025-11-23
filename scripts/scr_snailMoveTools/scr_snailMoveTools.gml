@@ -1,11 +1,11 @@
 function shouldICheckSidesFirst(xVelocity, yVelocity, cornersX, cornersY, inst){
-	show_debug_message("hi");
+	//show_debug_message("hi");
 	
 	var topsPermeance = findTopsPermeance(self, xVelocity, yVelocity, inst);
 	var sidesPermeance = findSidePermeance(self, xVelocity, yVelocity, inst);
 				
-	show_debug_message(string(self.x)+" "+string(self.bbox_left)+" "+string(self.bbox_right) );
-	show_debug_message(string(inst.x)+" "+string(inst.bbox_left)+" "+string(inst.bbox_right) );
+	//show_debug_message(string(self.x)+" "+string(self.bbox_left)+" "+string(self.bbox_right) );
+	//show_debug_message(string(inst.x)+" "+string(inst.bbox_left)+" "+string(inst.bbox_right) );
 	
 	if(sidesPermeance==0){
 		return true;
@@ -52,6 +52,7 @@ function findWallsThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, 
 	
 	for(var t = 0; t < 4; t++){
 		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, true);	
+		show_debug_message(insts);
 		
 		for(var i = 0; i < ds_list_size(insts); i++){
 			var wall = insts[| i];
@@ -60,7 +61,9 @@ function findWallsThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, 
 				//search array for copies
 				var isCopy = false;
 				for(var w = 0; w < array_length(wallsList); w++){
-					if(wall == wallsList[w]){ isCopy = true; }
+					if(instance_id_get(wall) == instance_id_get(wallsList[w])){ 
+						isCopy = true; 
+					}
 				}
 				
 				if(!isCopy){
