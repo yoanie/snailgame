@@ -59,91 +59,109 @@ var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevat
 		}
 	}
 } else {*/
-	//var isTouchingWall = elevationBasedWallDetectionPreliminary(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
 	
-	var wall = findWallThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
-	if(wall==pointer_null){
-		var wallLayerElements = layer_get_all_elements("Walls");
-		show_debug_message(wallLayerElements);
-		wall = findWallThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, wallLayerElements);
-	}
-	show_debug_message(wall);
+	var walls1 = findWallsThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel);
+	
+	var wallLayerElements = layer_get_all_elements("Walls");
+	//show_debug_message(wallLayerElements);
+	var walls2 = findWallsThatsTouching(self, velocityVector[0], velocityVector[1], cornersX, cornersY, wallLayerElements);
+	
+	var walls = array_concat(walls1, walls2);
+	//show_debug_message(wall);
 	
 	var isTouchingWall = false;
-	if(wall!=pointer_null){
-		isTouchingWall = findTopsPermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
-		isTouchingWall = isTouchingWall && findSidePermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
+	if(array_length(walls) > 0){
+		for(var w = 0; w < array_length(walls); w++){
+			var wall = walls[w];
+			
+			isTouchingWall = isTouchingWall || 
+				findTopsPermeance(self, velocityVector[0], velocityVector[1], wall) >= 0
+				&& findSidePermeance(self, velocityVector[0], velocityVector[1], wall) >= 0;
+		}
 	}
 	//show_debug_message("touchingwall: "+string(isTouchingWall));
 	
 	if(isTouchingWall){
+		show_debug_message("colliding with: "+string(array_length(walls))+" wall(s).");
+		var changeInXY = [0, 0];
 		
-
-		var order;
-		var checkSidesFirst = shouldICheckSidesFirst(velocityVector[0], velocityVector[1], cornersX, cornersY, wall);
-		show_debug_message(checkSidesFirst);
+		for(var w = 0; w < 1/*array_length(walls)*/; w++){
+			var wall = walls[w];
+			show_debug_message("	wall #"+string(w));
 		
-		/*
-		if(checkSidesFirst){
-			order = ["left", "right", "top", "bottom"];
-		} else {
-			order = ["top", "bottom", "left", "right"];
-		}
-		*/
+			var checkSidesFirst = shouldICheckSidesFirst(velocityVector[0]-changeInXY[0], velocityVector[1]-changeInXY[1], cornersX, cornersY, wall);
+			show_debug_message("checking sides: "+string(checkSidesFirst));
 		
-		if(checkSidesFirst){
-			var moveFactor = findSidePermeance(self, velocityVector[0], velocityVector[1], wall);
-			show_debug_message("side moveF bef: "+string(moveFactor)); 
-			
-			//moveFactor += self.sprite_width;
-			moveFactor *= sign(velocityVector[0]);
-			
-			show_debug_message("side moveF aft: "+string(moveFactor));
-			if(wall.isPushable){
-				wall.x += moveFactor;
+			/*
+			if(checkSidesFirst){
+				order = ["left", "right", "top", "bottom"];
 			} else {
-				velocityVector[0] -= moveFactor//sign(velocityVector[0])*self.moveSpeed;
+				order = ["top", "bottom", "left", "right"];
 			}
-		} else {
-			var moveFactor = findTopsPermeance(self, velocityVector[0], velocityVector[1], wall);
-			show_debug_message("tops moveF bef: "+string(moveFactor))
+			*/
+		
+			if(checkSidesFirst){
+				var moveFactor = findSidePermeance(self, velocityVector[0]-changeInXY[0], velocityVector[1]-changeInXY[1], wall);
+				show_debug_message("side moveF bef: "+string(moveFactor)); 
 			
-			//moveFactor += self.sprite_height;
-			moveFactor *= sign(velocityVector[1]);
+				var multVal = sign(velocityVector[0]) == 0 ? 1 : sign(velocityVector[0]);
+				moveFactor *= multVal;
 			
-			show_debug_message("tops moveF aft: "+string(moveFactor))
-			if(wall.isPushable){
-				wall.y += moveFactor;
+				show_debug_message("side moveF aft: "+string(moveFactor) + " (xVel was: "+string(velocityVector[0]-changeInXY[0])+ ")");
+				if(wall.isPushable){
+					wall.x += moveFactor;
+				} else {
+					if(abs(changeInXY[0]) < abs(moveFactor)){
+						changeInXY[0] = moveFactor//sign(velocityVector[0])*self.moveSpeed;
+					}
+				}
 			} else {
-				velocityVector[1] -= moveFactor//sign(velocityVector[1])*self.moveSpeed
+				var moveFactor = findTopsPermeance(self, velocityVector[0], velocityVector[1], wall);
+				show_debug_message("tops moveF bef: "+string(moveFactor));
+			
+				var multVal = sign(velocityVector[1]) == 0 ? 1 : sign(velocityVector[1]);
+				moveFactor *= multVal;
+			
+				show_debug_message("tops moveF aft: "+string(moveFactor) + " (yVel was: "+string(velocityVector[1]-changeInXY[1])+ ")");
+				if(wall.isPushable){
+					wall.y += moveFactor;
+				} else {
+					if(abs(changeInXY[1]) < abs(moveFactor)){
+						changeInXY[1] = moveFactor//sign(velocityVector[1])*self.moveSpeed
+					}
+				}
+				
 			}
-		}
 
 		
-		/* //for refernece
-		if(place_meeting(self.bbox_left, y, obj_snail)) {
-			self.x += obj_snail.moveSpeed
-		} else if(place_meeting(self.bbox_right, y, obj_snail)) {
-			self.x -= obj_snail.moveSpeed
-		} else if(place_meeting(x, self.bbox_top, obj_snail)) {
-			self.y += obj_snail.moveSpeed
-		} else if(place_meeting(x, self.bbox_bottom, obj_snail)) {
-			self.y -= obj_snail.moveSpeed
-		}
-		*/
-		
-		/*
-		for(var t = 0; t < 4; t++){
-			while(elevationBasedWallDetectionDirection(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel
-				, order[t])){
-			
-				if(order[t] == "left"){ velocityVector[0] += 1; }
-				else if(order[t] == "right"){ velocityVector[0] -= 1; }
-				else if(order[t] == "top"){ velocityVector[1] += 1; }
-				else if(order[t] == "bottom"){ velocityVector[1] -= 1; }
+			/* //for refernece
+			if(place_meeting(self.bbox_left, y, obj_snail)) {
+				self.x += obj_snail.moveSpeed
+			} else if(place_meeting(self.bbox_right, y, obj_snail)) {
+				self.x -= obj_snail.moveSpeed
+			} else if(place_meeting(x, self.bbox_top, obj_snail)) {
+				self.y += obj_snail.moveSpeed
+			} else if(place_meeting(x, self.bbox_bottom, obj_snail)) {
+				self.y -= obj_snail.moveSpeed
 			}
+			*/
+		
+			/*
+			for(var t = 0; t < 4; t++){
+				while(elevationBasedWallDetectionDirection(velocityVector[0], velocityVector[1], cornersX, cornersY, eyelevel
+					, order[t])){
+			
+					if(order[t] == "left"){ velocityVector[0] += 1; }
+					else if(order[t] == "right"){ velocityVector[0] -= 1; }
+					else if(order[t] == "top"){ velocityVector[1] += 1; }
+					else if(order[t] == "bottom"){ velocityVector[1] -= 1; }
+				}
+			}
+			*/
 		}
-		*/
+		
+		velocityVector[0] -= changeInXY[0];
+		velocityVector[1] -= changeInXY[1];
 		
 		show_debug_message(velocityVector);
 		show_debug_message("end");
