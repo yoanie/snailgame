@@ -18,3 +18,8 @@ if(self.currentTooltipMessage != ""){
 	var clr = (self.cursorState == "normal" ? c_white : c_lime);
 	text_drop_shadow(mouse_x+offset[0], mouse_y+offset[1], clr, c_black, self.currentTooltipMessage, -1, -1);
 }
+
+//reset tooltip for next frame
+self.tooltip_left = "";
+self.tooltip_right = "";
+self.currentTooltipMessage = "";
