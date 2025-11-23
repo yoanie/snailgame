@@ -204,6 +204,7 @@
     {"id":{"name":"scr_inventory","path":"scripts/scr_inventory/scr_inventory.yy",},},
     {"id":{"name":"scr_ledges","path":"scripts/scr_ledges/scr_ledges.yy",},},
     {"id":{"name":"scr_moveTo","path":"scripts/scr_moveTo/scr_moveTo.yy",},},
+    {"id":{"name":"scr_snailMoveTools","path":"scripts/scr_snailMoveTools/scr_snailMoveTools.yy",},},
     {"id":{"name":"spr_checkTime","path":"scripts/spr_checkTime/spr_checkTime.yy",},},
     {"id":{"name":"sh_outline","path":"shaders/sh_outline/sh_outline.yy",},},
     {"id":{"name":"shd_dim","path":"shaders/shd_dim/shd_dim.yy",},},
