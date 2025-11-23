@@ -47,33 +47,51 @@ function findWallThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, l
 }
 
 function findWallsThatsTouching(plyr, xVelocity, yVelocity, cornersX, cornersY, list){
-	var wallsList = [];
-	var insts = ds_list_create();
-	
+	var wallsList = [pointer_null];
+	var newCornersX = [0, 0, 0, 0];
+	var newCornersY = [0, 0, 0, 0];
 	for(var t = 0; t < 4; t++){
-		instance_position_list(cornersX[t]+xVelocity, cornersY[t]+yVelocity, list, insts, true);	
-		show_debug_message(insts);
-		
-		for(var i = 0; i < ds_list_size(insts); i++){
-			var wall = insts[| i];
-			if(object_is_ancestor(wall.object_index, obj_wall_parent)){
+		newCornersX[t] = cornersX[t]+xVelocity;
+		newCornersY[t] = cornersY[t]+yVelocity;
+	}
+	
+	for(var i = 0; i < array_length(list); i++){
+		var wall = list[i];
+		//show_debug_message(wall);
+			
+		for(var t = 0; t < 4; t++){
+
+			if(wall > 100000 && string_pos("instance", wall)
+			&& object_is_ancestor(wall.object_index, obj_wall_parent)) {
 				
-				//search array for copies
-				var isCopy = false;
-				for(var w = 0; w < array_length(wallsList); w++){
-					if(instance_id_get(wall) == instance_id_get(wallsList[w])){ 
-						isCopy = true; 
+				/*
+				show_debug_message(newCornersY[t] < wall.bbox_top)
+				show_debug_message(newCornersY[t] > wall.bbox_bottom)
+				show_debug_message(newCornersX[t] < wall.bbox_right)
+				show_debug_message(newCornersX[t] > wall.bbox_left)
+				*/
+				
+				if(newCornersY[t] <= wall.bbox_top
+				&& newCornersY[t] >= wall.bbox_bottom
+				&& newCornersX[t] <= wall.bbox_right
+				&& newCornersX[t] >= wall.bbox_left){
+				
+					//search array for copies
+					var isCopy = false;
+					for(var w = 0; w < array_length(wallsList); w++){
+						if(instance_id_get(wall) == instance_id_get(wallsList[w])){ 
+							isCopy = true; 
+						}
+					}
+				
+					if(!isCopy){
+						array_insert(wallsList, array_length(wallsList)-1, wall);
 					}
 				}
-				
-				if(!isCopy){
-					array_insert(wallsList, array_length(wallsList)-1, wall);
-				}
 			}
+			
 		}
-		ds_list_clear(insts);
 	}
-	ds_list_destroy(insts); //must have this line, otherwise memory issues
 	
 	return wallsList;
 }
