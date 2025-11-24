@@ -8,7 +8,7 @@ if(cursorState == "normal"){
 
 self.currentTooltipMessage = self.tooltip_left + self.tooltip_right;
 
-if(self.currentTooltipMessage != ""){
+if(self.currentTooltipMessage != "" && obj_snail.state != -1){
 	var offset = [35, 35];
 	
 	draw_set_halign(fa_left);

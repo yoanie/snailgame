@@ -26,22 +26,11 @@ switch (self.hitboxTouchingId){
 		break;
 	case -28: //knife hitbox
 		if(self.state == 2){
-			show_debug_message("human shall die");
-			with(obj_menu_end){
-				event_user(0);
-			}
-			path_end();
-			alarm[0] = 0;
-			self.state = -1;
+			event_user(2);
 		}
 		break;
 	case 29: //beartrap hitbox
-		show_debug_message("human shall die");
-		obj_bearTrap.image_index = 1;
-		with(obj_menu_end){
-			event_user(0);
-		}
-		self.state = -1;
+		event_user(2);
 		break;
 
 }
