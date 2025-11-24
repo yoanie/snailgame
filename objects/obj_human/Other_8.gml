@@ -1,5 +1,8 @@
 ///@description Stop moving
 
+self.prev_x = self.x;
+self.prev_y = self.y;
+
 if(self.state == 1) {
 	alarm[0] = 3 * game_get_speed(gamespeed_fps);
 }

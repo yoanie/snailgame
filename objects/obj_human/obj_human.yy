@@ -35,7 +35,7 @@
     {"$GMObjectProperty":"v2","%Name":"state","filters":[],"listItems":[],"multiselect":false,"name":"state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"prev_x","filters":[],"listItems":[],"multiselect":false,"name":"prev_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"self.x","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"prev_y","filters":[],"listItems":[],"multiselect":false,"name":"prev_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"self.y","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"moveSpeed","filters":[],"listItems":[],"multiselect":false,"name":"moveSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"moveSpeed","filters":[],"listItems":[],"multiselect":false,"name":"moveSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4.65","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"direction","filters":[],"listItems":[],"multiselect":false,"name":"direction","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"270","varType":0,},
   ],
   "resourceType":"GMObject",

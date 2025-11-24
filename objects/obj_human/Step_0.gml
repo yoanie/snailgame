@@ -5,7 +5,7 @@ if(self.state == -1){
 }
 
 // Checks if the human is actually moving
-if(self.xprevious == self.x && self.yprevious == self.y) {
+if(self.prev_x == self.x && self.prev_y == self.y) {
 	// If not moving, stop the walking sound
 	if (walk_sound_inst != noone && audio_is_playing(walk_sound_inst)) {
         audio_stop_sound(walk_sound_inst);
@@ -60,3 +60,6 @@ if(current_direction > 315 || current_direction <= 45) {
 if (walk_sound_inst == noone || !audio_is_playing(walk_sound_inst)) {
     walk_sound_inst = audio_play_sound(walk_sound, 0, true); // loop
 }
+
+self.prev_x = self.x;
+self.prev_y = self.y;
