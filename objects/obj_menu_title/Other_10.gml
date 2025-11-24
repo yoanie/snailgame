@@ -19,11 +19,6 @@ if(instance_exists(obj_timeController)){
 if(menuIsUp){
 	startbtn = instance_create_layer(view_get_wport(0)/2, 7*view_get_hport(0)/10, "GUI", btn_roomtrans);
 	startbtn.allegiantTo = self;
-	//if(!self.seenTutorial) {
-		//startbtn.roomToGoTo = rm_tutorial;
-		//self.seenTutorial = true;
-	//} else {
-		startbtn.roomToGoTo = rm_newMain;
-	//}
+	startbtn.roomToGoTo = rm_tutorial;
 	startbtn.sprite_index = spr_play;
 }
