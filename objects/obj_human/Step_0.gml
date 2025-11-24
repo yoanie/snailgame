@@ -1,5 +1,11 @@
+
+if(self.state == -1){
+	self.sprite_index = spr_human_perish;
+	return;
+}
+
 // Checks if the human is actually moving
-if(self.prev_x == self.x && self.prev_y == self.y) {
+if(self.xprevious == self.x && self.yprevious == self.y) {
 	// If not moving, stop the walking sound
 	if (walk_sound_inst != noone && audio_is_playing(walk_sound_inst)) {
         audio_stop_sound(walk_sound_inst);
@@ -10,7 +16,7 @@ if(self.prev_x == self.x && self.prev_y == self.y) {
 }
 
 // Determines the angle the human is moving at
-var current_direction = point_direction(self.prev_x, self.prev_y, self.x, self.y);
+var current_direction = point_direction(self.xprevious, self.yprevious, self.x, self.y);
 
 // Moving right
 if(current_direction > 315 || current_direction <= 45) {
@@ -54,7 +60,3 @@ if(current_direction > 315 || current_direction <= 45) {
 if (walk_sound_inst == noone || !audio_is_playing(walk_sound_inst)) {
     walk_sound_inst = audio_play_sound(walk_sound, 0, true); // loop
 }
-
-// Update prev_x and prev_y for next step
-self.prev_x = self.x;
-self.prev_y = self.y;

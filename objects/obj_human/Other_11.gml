@@ -13,6 +13,9 @@ if(self.state == -1){
 }
 
 switch (self.hitboxTouchingId){
+	case -8: //flamethrower flame
+		event_user(2);
+		break;
 	case 25: //banana peel
 		self.state = 2;
 		self.hitbox.affectsSnail = false;
