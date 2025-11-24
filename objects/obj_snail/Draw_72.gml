@@ -1,6 +1,7 @@
 ///@description Set elevationCandidate for Climbing up or down
 
 self.elevationCandidate = pointer_null;
+if(self.state == -1){ return; }
 
 if(obj_cursorStateController.cursorState != "normal"){
 	return;

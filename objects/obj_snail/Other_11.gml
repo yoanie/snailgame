@@ -14,14 +14,7 @@ if(self.state == -1){
 
 switch (self.hitboxTouchingId){
 	case -10: //human crushing hitbox
-		show_debug_message("snail shall die");
-		with(obj_menu_end){
-			event_user(0);
-			
-		}
-		self.state = -1;
-		audio_stop_sound(mus_gameplayMusic)
-		audio_play_sound(sfx_humanDying, 1, false)
+		event_user(2);
 		break;
 }
 

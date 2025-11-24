@@ -386,6 +386,8 @@
     {"name":"inst_1310C7C9","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_B65B5CF","path":"rooms/rm_newMain/rm_newMain.yy",},
     {"name":"inst_70BA0741","path":"rooms/rm_newMain/rm_newMain.yy",},
+    {"name":"inst_36AD5689","path":"rooms/rm_newMain/rm_newMain.yy",},
+    {"name":"inst_74D3433","path":"rooms/rm_newMain/rm_newMain.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -767,6 +769,8 @@
         {"$GMRInstance":"v4","%Name":"inst_5E1266D5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E1266D5","objectId":{"name":"obj_lighter","path":"objects/obj_lighter/obj_lighter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":512.0,},
         {"$GMRInstance":"v4","%Name":"inst_1FEC36DE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FEC36DE","objectId":{"name":"obj_hairspray","path":"objects/obj_hairspray/obj_hairspray.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1664.0,"y":256.0,},
         {"$GMRInstance":"v4","%Name":"inst_15034804","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15034804","objectId":{"name":"obj_hairspray","path":"objects/obj_hairspray/obj_hairspray.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":704.0,},
+        {"$GMRInstance":"v4","%Name":"inst_36AD5689","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36AD5689","objectId":{"name":"obj_knife","path":"objects/obj_knife/obj_knife.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2208.0,"y":544.0,},
+        {"$GMRInstance":"v4","%Name":"inst_74D3433","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_74D3433","objectId":{"name":"obj_banana_peel","path":"objects/obj_banana_peel/obj_banana_peel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2080.0,"y":544.0,},
       ],"layers":[],"name":"Instances_0","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Flooring","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_D9FF080","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_D9FF080","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_floor1","path":"sprites/spr_floor1/spr_floor1.yy",},"x":800.0,"y":96.0,},
