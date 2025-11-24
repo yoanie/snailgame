@@ -12,8 +12,8 @@
   "name":"obj_hitbox_circle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hitboxes",
-    "path":"folders/Objects/Hitboxes.yy",
+    "name":"Hitbox Related",
+    "path":"folders/Objects/Hitbox Related.yy",
   },
   "parentObjectId":null,
   "persistent":false,

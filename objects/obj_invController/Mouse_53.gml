@@ -10,6 +10,19 @@ if (self.canSwingItemHere){
 			show_debug_message("dcos:"+string(dcos(dtheta)));
 			show_debug_message("dsin:"+string(dsin(dtheta)));*/
 			
+			var duration = 0.06;
+			var knifesprite = instance_create_layer(obj_snail.x, obj_snail.y, 
+				findLayerNameOfElevationLevel(obj_snail.elevationLevel), obj_weaponGraphic);
+			with(knifesprite){
+				gluedTo = obj_snail;
+				spriteToDisplay = spr_knife_swing;
+				spriteToDisplay_size = 0.65;
+				self.image_angle = -dtheta;
+				theta_offset = 135; //based on art
+				self.duration = duration;
+				event_user(0);
+			}
+			
 			var hitbox = instance_create_layer(obj_snail.x, obj_snail.y, 
 				findLayerNameOfElevationLevel(obj_snail.elevationLevel), obj_hitbox_circle);
 			with(hitbox){
@@ -18,7 +31,7 @@ if (self.canSwingItemHere){
 				affectsHuman = true;
 				affectsSnail = false;
 				radius = 36;
-				duration = 0.06;
+				self.duration = duration;
 				event_user(0);
 			}
 			
@@ -32,7 +45,7 @@ if (self.canSwingItemHere){
 				affectsHuman = true;
 				affectsSnail = false;
 				radius = 24;
-				duration = 0.06;
+				self.duration = duration;
 				event_user(0);
 			}
 			break;
