@@ -30,7 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"startTime","filters":[],"listItems":[],"multiselect":false,"name":"startTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"endTime","filters":[],"listItems":[],"multiselect":false,"name":"endTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"endTime","filters":[],"listItems":[],"multiselect":false,"name":"endTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"250","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"totalMetaHoursForLevel","filters":[],"listItems":[],"multiselect":false,"name":"totalMetaHoursForLevel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"18","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"conversionRatio","filters":[],"listItems":[],"multiselect":false,"name":"conversionRatio","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"currentTime","filters":[],"listItems":[],"multiselect":false,"name":"currentTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
