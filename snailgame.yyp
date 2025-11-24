@@ -236,6 +236,7 @@
     {"id":{"name":"sfx_slide04","path":"sounds/sfx_slide04/sfx_slide04.yy",},},
     {"id":{"name":"sfx_slide05","path":"sounds/sfx_slide05/sfx_slide05.yy",},},
     {"id":{"name":"sfx_slide06","path":"sounds/sfx_slide06/sfx_slide06.yy",},},
+    {"id":{"name":"sfx_snailDying","path":"sounds/sfx_snailDying/sfx_snailDying.yy",},},
     {"id":{"name":"sfx_snailmove","path":"sounds/sfx_snailmove/sfx_snailmove.yy",},},
     {"id":{"name":"sfx_water","path":"sounds/sfx_water/sfx_water.yy",},},
     {"id":{"name":"gui_elevationDown","path":"sprites/gui_elevationDown/gui_elevationDown.yy",},},

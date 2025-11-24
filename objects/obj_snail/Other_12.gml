@@ -8,4 +8,4 @@ with(obj_menu_end){
 self.state = -1;
 obj_cursorStateController.cursorState = "normal";
 audio_stop_sound(mus_gameplayMusic);
-audio_play_sound(sfx_humanDying, 1, false);
+audio_play_sound(sfx_snailDying, 1, false);
