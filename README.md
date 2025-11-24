@@ -10,7 +10,7 @@ Snurder Game uses a "cursor state" system for the sake of making gameplay more i
 - Escape | Pause game
 
 - Pick up item | Left-click in the "item" cursor state on item when in reach
-- Combine item on ground with currenly selected item | Right-click in the "normal" cursor state on corresponding item on ground when in reach
+- Combine item on ground with currenly selected item | Right-click in the "item" cursor state on corresponding item on ground when in reach
 - Drop currently selected item | Right-click in the "item" cursor state on valid floor tile when in reach
 - Swing item | Left-click in the "normal" cursor state in the air
 - Climb up or down | Right-click in the "normal" cursor state on valid elevation tile when in reach
