@@ -1,4 +1,4 @@
-if (obj_cursorStateController.cursorState == "item" && self.canDropItemHere){
+if (obj_cursorStateController.cursorState == "item" && !self.canCombineItemHere && self.canDropItemHere){
 	show_debug_message("dropping item " + inventory[selectedItemPointer].name);
 	
 	var newX = mouse_x;
