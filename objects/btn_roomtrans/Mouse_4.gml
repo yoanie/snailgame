@@ -1,3 +1,7 @@
+if(instance_exists(obj_tutorial_background)) {
+	return;
+}
+
 audio_stop_sound(mus_menu_endscreen)
 audio_stop_sound(mus_gameplayMusic)
 audio_play_sound(sfx_click, 1, false)
