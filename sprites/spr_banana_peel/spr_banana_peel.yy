@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_banana_peel",
   "bboxMode":0,
-  "bbox_bottom":63,
-  "bbox_left":10,
-  "bbox_right":62,
+  "bbox_bottom":56,
+  "bbox_left":0,
+  "bbox_right":61,
   "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ad147b28-1e7d-4a22-90e0-122c4f1c0242","name":"ad147b28-1e7d-4a22-90e0-122c4f1c0242","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a276b5e1-2907-42a8-8f2c-a021a14ff4a7","name":"a276b5e1-2907-42a8-8f2c-a021a14ff4a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"9da140f0-bac3-4c36-9b35-788928a976a8","blendMode":0,"displayName":"default","isLocked":false,"name":"9da140f0-bac3-4c36-9b35-788928a976a8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"94a7cfa7-1075-49ef-9cd6-710e61352d52","blendMode":0,"displayName":"default","isLocked":false,"name":"94a7cfa7-1075-49ef-9cd6-710e61352d52","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_banana_peel",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ad147b28-1e7d-4a22-90e0-122c4f1c0242","path":"sprites/spr_banana_peel/spr_banana_peel.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7a4838cd-d18e-477b-b090-00b27faecc10","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a276b5e1-2907-42a8-8f2c-a021a14ff4a7","path":"sprites/spr_banana_peel/spr_banana_peel.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cce267c2-5d99-4aef-a8d4-6944f42531a1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
