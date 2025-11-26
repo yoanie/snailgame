@@ -16,7 +16,7 @@ if(self.prev_x == self.x && self.prev_y == self.y) {
 }
 
 // Determines the angle the human is moving at
-var current_direction = point_direction(self.xprevious, self.yprevious, self.x, self.y);
+var current_direction = point_direction(self.prev_x, self.prev_y, self.x, self.y);
 
 // Moving right
 if(current_direction > 315 || current_direction <= 45) {

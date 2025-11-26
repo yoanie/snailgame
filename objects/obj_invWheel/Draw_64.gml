@@ -1,4 +1,9 @@
 ///@description Draw Inventory Wheel and Slots
+
+if(obj_menu_pause.menuIsUp || obj_menu_end.menuIsUp) {
+	return;
+}
+
 var center = [110, view_hport-90];
 
 draw_sprite_ext(gui_invWheel, -1, center[0], center[1], 1, 1, self.image_angle, c_white, 1.0);

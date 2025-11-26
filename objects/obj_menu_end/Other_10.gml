@@ -18,6 +18,10 @@ if(instance_exists(obj_timeController)){
 	obj_timeController.timeIsFrozen = self.menuIsUp;
 }
 if(menuIsUp){
+	instance_destroy(obj_cursor);
+	
 	quitbtn = instance_create_layer(view_get_wport(0)/2, 7*view_get_hport(0)/10, "GUI", btn_menu_quit);
 	quitbtn.allegiantTo = self;
+	
+	instance_create_layer(mouse_x, mouse_y, "GUI", obj_cursor);
 }
