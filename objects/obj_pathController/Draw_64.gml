@@ -1,1 +1,1 @@
-//draw_text(10, 40, string(obj_human.path_speed));
+draw_text(10, 40, string(obj_human.path_speed));

@@ -2,9 +2,8 @@
 
 if(obj_snail.state == -1){ return; }
 
-if(distance_to_object(obj_snail) > obj_snail.itemReach || !self.isMouseHovering) {
+if(distance_to_object(obj_snail) > obj_snail.itemReach || !self.isMouseHovering)
 	return;
-}
 
 if (self.isSelfInteractable &&
 	obj_cursorStateController.cursorState == "item") {
