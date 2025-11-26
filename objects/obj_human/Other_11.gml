@@ -25,9 +25,10 @@ switch (self.hitboxTouchingId){
 			instance_destroy(self);
 		}
 		
-		alarm[0] = 4 * game_get_speed(gamespeed_fps); 
+		alarm[0] = 8 * game_get_speed(gamespeed_fps); 
 		break;
 	case -28: //knife hitbox
+		show_debug_message("hit by knife");
 		if(self.state == 2){
 			event_user(2);
 		}

@@ -1,4 +1,4 @@
-///@description Apply elevation based shaders & Draw Elevation UI
+///@description Apply elevation based shaders
 
 var deltaElevation = self.elevationLevel - obj_snail.elevationLevel;
 if(deltaElevation > 0){
@@ -11,7 +11,7 @@ if(deltaElevation > 0){
 draw_self();
 shader_reset();
 
-
+/*
 //show_debug_message("above elevationLevel objects (len " + string(array_length(above)) + ") ");
 //show_debug_message(above);
 for(var i = 0; i < array_length(above); i++){
@@ -27,6 +27,7 @@ for(var i = 0; i < array_length(below); i++){
 		draw_sprite(gui_elevationDown, -1, below[i].x, below[i].y);
 	}
 }
+*/
 
 //bbox debug
 if(showDebug){

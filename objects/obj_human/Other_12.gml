@@ -2,6 +2,7 @@
 
 show_debug_message("human shall die");
 with(obj_menu_end){
+	self.menuIsUp = false;
 	event_user(0);
 }
 path_end();

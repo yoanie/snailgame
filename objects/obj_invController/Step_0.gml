@@ -32,6 +32,10 @@ if(obj_snail.elevationLevel == 0){
 
 self.canDropItemHere = self.canDropItemHere && !self.canCombineItemHere;
 
+if(obj_snail.state == -1 || obj_menuController.globalMenuIsUp == true){
+	return;
+}
+
 if(self.canSwingItemHere){
 	obj_cursorStateController.tooltip_left += "[Left-click] Swing "+self.inventory[self.selectedItemPointer].name+"\n";
 }
