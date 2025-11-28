@@ -93,7 +93,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"snailgame",
   "resources":[
@@ -241,6 +241,7 @@
     {"id":{"name":"sfx_water","path":"sounds/sfx_water/sfx_water.yy",},},
     {"id":{"name":"gui_elevationDown","path":"sprites/gui_elevationDown/gui_elevationDown.yy",},},
     {"id":{"name":"gui_elevationUp","path":"sprites/gui_elevationUp/gui_elevationUp.yy",},},
+    {"id":{"name":"gui_humanArrow","path":"sprites/gui_humanArrow/gui_humanArrow.yy",},},
     {"id":{"name":"gui_invSlot","path":"sprites/gui_invSlot/gui_invSlot.yy",},},
     {"id":{"name":"gui_invWheel","path":"sprites/gui_invWheel/gui_invWheel.yy",},},
     {"id":{"name":"spr_banana_peel","path":"sprites/spr_banana_peel/spr_banana_peel.yy",},},
