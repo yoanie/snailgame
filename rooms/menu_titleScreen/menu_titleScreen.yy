@@ -25,8 +25,8 @@
   ],
   "name":"menu_titleScreen",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Main_Game",
+    "path":"folders/Rooms/Main_Game.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

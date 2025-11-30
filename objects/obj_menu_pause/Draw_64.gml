@@ -5,12 +5,15 @@ if(self.menuIsUp){
 	draw_set_colour(c_red);
 	draw_set_alpha(1);
 	
-	if(instance_exists(obj_tutorial_background)) {
-		return;
-	}
-	
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(fnt_menu);
+	
+	if(instance_exists(obj_tutorial_background)) {
+		draw_text_transformed(view_get_wport(0)/2, 19 * view_get_hport(0)/20, "Press \"Escape\" to exit", 1.5, 1.5, 0);
+		
+		return;
+	}
+	
 	draw_text_transformed(view_get_wport(0)/2, view_get_hport(0)/4, "Game Paused\nPress ESC to unpause.", 3, 3, 0);
 }
