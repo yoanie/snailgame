@@ -1,5 +1,4 @@
 
-show_debug_message("intersect")
 if (isPushable && 
 	self.elevationLevel == obj_snail.elevationLevel /* && 
 		((self.bbox_top > obj_snail.bbox_bottom &&
@@ -14,7 +13,7 @@ if (isPushable &&
 		 */
 		 ){
 		
-		
+	show_debug_message("intersect")
 	if(place_meeting(self.bbox_left, y, obj_snail)) {
 		self.x += obj_snail.moveSpeed
 	} else if(place_meeting(self.bbox_right, y, obj_snail)) {

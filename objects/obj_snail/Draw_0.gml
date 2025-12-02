@@ -46,6 +46,7 @@ if(showDebug){
 	var cornersX = [self.bbox_left, self.bbox_right, self.bbox_right, self.bbox_left];
 	var cornersY = [self.bbox_top, self.bbox_top, self.bbox_bottom, self.bbox_bottom];
 
+	draw_set_font(fnt_debug);
 	draw_set_colour(c_black);
 	draw_circle(self.x, self.y, 3, false);
 	draw_set_colour(c_blue);
@@ -60,4 +61,5 @@ if(showDebug){
 	}
 	
 	draw_text(self.x, self.y+120, "Elevation: " + string(elevationLevel));
+	draw_text(self.x, self.y+150, "Depth: " + string(self.depth));
 }
