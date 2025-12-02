@@ -35,6 +35,7 @@
     {"$GMObjectProperty":"v2","%Name":"isPushable","filters":[],"listItems":[],"multiselect":false,"name":"isPushable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"hitboxTouching","filters":[],"listItems":[],"multiselect":false,"name":"hitboxTouching","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"hitboxTouchingId","filters":[],"listItems":[],"multiselect":false,"name":"hitboxTouchingId","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"collisionId","filters":[],"listItems":[],"multiselect":false,"name":"collisionId","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
