@@ -6,6 +6,12 @@ if(self.state == -1){
 } else if(self.state == 2){
 	self.image_xscale = 1;
 	self.sprite_index = spr_human_daze;
+	
+	if (walk_sound_inst != noone && audio_is_playing(walk_sound_inst)) {
+        audio_stop_sound(walk_sound_inst);
+        walk_sound_inst = noone;
+    }
+	
 	return;
 } else 
 
