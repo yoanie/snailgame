@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Debug",
-    "path":"folders/Sprites/Blocks/Debug.yy",
+    "path":"folders/Sprites/Floor Tiles/Debug.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
