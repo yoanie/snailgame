@@ -1,12 +1,13 @@
-///@description If want to be gluedTo, set it TODO: crashes if not found lol
+///@description If want to be gluedTo, set it
 //it doesn't work when its in create event because not everything is initialized
 
-if(self.gluedTo == pointer_null && self.idGluedTo != 0){
+if(self.gluedTo != self && self.gluedTo == pointer_null && self.idGluedTo != 0){
 
-	var instancePhoneNumber = pointer_invalid;
+	var instancePhoneNumber = self;
 	if(self.idGluedTo != 0){
 		var lookingFor = self.idGluedTo;
-		show_debug_message("searching");
+		
+		show_debug_message("obj_tile_parent is searching for true love");
 		with(obj_block_parent){
 			show_debug_message(self.collisionId);
 			if(self.collisionId == lookingFor){
@@ -17,7 +18,7 @@ if(self.gluedTo == pointer_null && self.idGluedTo != 0){
 	}
 	self.gluedTo = instancePhoneNumber;
 
-	if(self.gluedTo != pointer_invalid){
+	if(self.gluedTo != self){
 		show_debug_message("my x:"+string(self.x)+" other x:"+string(self.gluedTo.x));
 		self.offsetTarget_x = self.x - self.gluedTo.x;
 		self.offsetTarget_y = self.y - self.gluedTo.y;
