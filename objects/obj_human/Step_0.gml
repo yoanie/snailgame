@@ -24,19 +24,19 @@ if(self.prev_x == self.x && self.prev_y == self.y) {
 var current_direction = point_direction(self.prev_x, self.prev_y, self.x, self.y);
 
 // Moving right
-if(current_direction > 315 || current_direction <= 45) {
+if(current_direction > 310 || current_direction <= 40) {
 	self.sprite_index = spr_human_side_a;
 	self.image_xscale = 1;
 	self.direction = 0;
 
 // Moving up
-} else if(current_direction > 45 && current_direction <= 135) {
+} else if(current_direction > 40 && current_direction <= 140) {
 	self.sprite_index = spr_human_back_a;
 	self.image_xscale = 1;
 	self.direction = 90;
 
 // Moving left
-} else if(current_direction > 135 && current_direction <= 225) {
+} else if(current_direction > 140 && current_direction <= 220) {
 	self.sprite_index = spr_human_side_a;
 	self.image_xscale = -1;
 	self.direction = 180;
