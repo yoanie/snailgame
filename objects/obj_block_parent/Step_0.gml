@@ -1,4 +1,7 @@
 
+var newX = self.x;
+var newY = self.y;
+
 if (isPushable && 
 	self.elevationLevel == obj_snail.elevationLevel /* && 
 		((self.bbox_top > obj_snail.bbox_bottom &&
@@ -15,12 +18,17 @@ if (isPushable &&
 		
 	show_debug_message("intersect")
 	if(place_meeting(self.bbox_left, y, obj_snail)) {
-		self.x += obj_snail.moveSpeed
+		newX += obj_snail.moveSpeed
 	} else if(place_meeting(self.bbox_right, y, obj_snail)) {
-		self.x -= obj_snail.moveSpeed
+		newX -= obj_snail.moveSpeed
 	} else if(place_meeting(x, self.bbox_top, obj_snail)) {
-		self.y += obj_snail.moveSpeed
+		newY += obj_snail.moveSpeed
 	} else if(place_meeting(x, self.bbox_bottom, obj_snail)) {
-		self.y -= obj_snail.moveSpeed
+		newY -= obj_snail.moveSpeed
 	}
+}
+
+if(!place_meeting(newX, newY, obj_wall_parent)){
+	self.x = newX;
+	self.y = newY;
 }

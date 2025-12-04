@@ -34,6 +34,8 @@ switch (self.hitboxTouchingId){
 		}
 		break;
 	case 29: //beartrap hitbox
+		obj_bearTrap.image_index = 1;
+		audio_play_sound(sfx_bearTrap, 15, -1);
 		event_user(2);
 		break;
 
