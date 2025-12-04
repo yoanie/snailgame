@@ -21,7 +21,8 @@ var ALPHA = .4;
 var COLOR = c_yellow;
 
 if(self.isSelfInteractable){
-	if(distance_to_object(obj_snail) <= obj_snail.itemReach){
+	if (distance_to_object(obj_snail) <= obj_snail.itemReach &&
+		!self.tooHeavyToBePickedUp){
 		ALPHA = 1.0;
 	}
 	
