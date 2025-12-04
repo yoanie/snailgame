@@ -42,6 +42,13 @@ var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevat
 var newX = self.x + velocityVector[0];
 var newY = self.y + velocityVector[1];
 
+if(velocityVector[0] == 0 && velocityVector[1] == 0) {
+	self.image_speed = 0;
+	self.image_index = 0;
+} else {
+	self.image_speed = 1;
+}
+
 while(place_meeting(newX, self.y, obj_wall_parent)) {
 	if(isRight) {
 		newX -= 1;
