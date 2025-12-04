@@ -1,5 +1,5 @@
 with(obj_human) {
-	if(self.state == -1 || self.state == 2 || obj_menu_pause.menuIsUp) {
+	if(self.state == -1 || self.state == 2 || obj_menu_pause.menuIsUp || distance_to_object(obj_snail) > (20 * 64)) {
 		return;
 	}
 	
