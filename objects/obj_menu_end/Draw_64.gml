@@ -8,5 +8,10 @@ if(self.menuIsUp){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(fnt_menu);
-	draw_text_transformed(view_get_wport(0)/2, view_get_hport(0)/4, "Game end!", 3, 3, 0);
+	
+	if(self.end_state == 0) {
+		draw_text_transformed(view_get_wport(0)/2, view_get_hport(0)/4, "Game over!", 3, 3, 0);
+	} else {
+		
+	}
 }
