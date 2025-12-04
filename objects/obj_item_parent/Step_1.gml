@@ -13,9 +13,11 @@ if (obj_snail.elevationLevel == self.elevationLevel &&
 		
 			obj_cursorStateController.tooltip_right += "[Right-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
 			obj_invController.canCombineItemHere = true;
-		} else if(!self.tooHeavyToBePickedUp){
-			obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
 			
+			
+		}
+		if(!self.tooHeavyToBePickedUp){
+			obj_cursorStateController.tooltip_left += "[Left-click] Pick up "+self.name+"\n";
 		}
 		/*self.isSelfInteractable = 
 			obj_invController.inventory[obj_invController.selectedItemPointer] != pointer_null &&
