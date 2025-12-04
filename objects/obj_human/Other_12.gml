@@ -6,7 +6,6 @@ with(obj_menu_end){
 	event_user(0);
 }
 path_end();
-alarm[0] = 0;
 self.state = -1;
 obj_cursorStateController.cursorState = "normal";
 audio_stop_sound(mus_gameplayMusic);

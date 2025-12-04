@@ -12,6 +12,7 @@ if(self.menuIsUp){
 	if(self.end_state == 0) {
 		draw_text_transformed(view_get_wport(0)/2, view_get_hport(0)/4, "Game over!", 3, 3, 0);
 	} else {
-		
+		draw_text_transformed(view_get_wport(0)/2, view_get_hport(0)/4, "You beat the human!", 3, 3, 0);
+		draw_text_transformed(view_get_wport(0)/2, view_get_hport(0)/3, "Using method " + string(self.end_state) + " of 3", 2, 2, 0);
 	}
 }
