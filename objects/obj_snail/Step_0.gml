@@ -1,5 +1,5 @@
 ///@description Move player
-if(instance_exists(obj_menu_pause) && obj_menu_pause.menuIsUp){
+if(instance_exists(obj_menu_pause) && obj_menu_pause.menuIsUp || obj_menu_end.menuIsUp){
 	return;
 }
 switch (self.state){
