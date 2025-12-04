@@ -27,7 +27,7 @@ if (self.isSelfInteractable &&
 		instance_destroy(self);
 	}
 } else if (obj_cursorStateController.cursorState=="item" && 
-	obj_cursorStateController.canCombineItemHere) {
+	obj_invController.canCombineItemHere) {
 	
 	show_debug_message("combined!");
 	instance_create_layer(self.x, self.y, findLayerNameOfElevationLevel(self.elevationLevel), self.item_combines_into);

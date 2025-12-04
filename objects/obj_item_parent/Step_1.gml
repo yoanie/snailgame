@@ -2,7 +2,8 @@
 depth = -y;
 
 //If pickup allowed, give player tooltip on action
-if(self.isMouseHovering && 
+if (obj_snail.elevationLevel == self.elevationLevel &&
+	self.isMouseHovering && 
 	distance_to_object(obj_snail) <= obj_snail.itemReach &&
 	obj_cursorStateController.cursorState=="item"){
 		
