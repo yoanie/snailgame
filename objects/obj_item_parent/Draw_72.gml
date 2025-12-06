@@ -1,7 +1,9 @@
 //set isSelfInteractable. used internally in item and is applicable to both cursor states.
 
 //if(self.isMouseHovering){
-	if(obj_cursorStateController.cursorState=="item"){
+	if(obj_snail.elevationLevel == self.elevationLevel &&
+	obj_cursorStateController.cursorState=="item"){
+		
 		self.isSelfInteractable = true;
 	}/* else if(obj_cursorStateController.cursorState=="normal"){
 		self.isSelfInteractable = 

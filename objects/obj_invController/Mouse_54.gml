@@ -17,3 +17,4 @@ if (obj_cursorStateController.cursorState == "item" && !self.canCombineItemHere 
 
 self.canDropItemHere = false;
 self.canCombineItemHere = false;
+self.canSwingItemHere = false;
