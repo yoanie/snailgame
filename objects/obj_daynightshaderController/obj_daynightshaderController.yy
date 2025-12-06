@@ -1,14 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menu_title",
+  "%Name":"obj_daynightshaderController",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_menu_title",
+  "name":"obj_daynightshaderController",
   "overriddenProperties":[],
   "parent":{
     "name":"Meta",
@@ -29,7 +28,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"menuIsUp","filters":[],"listItems":[],"multiselect":false,"name":"menuIsUp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"shader","filters":[],"listItems":[],"multiselect":false,"name":"shader","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"shd_daynight","path":"shaders/shd_daynight/shd_daynight.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"shd_daynight","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

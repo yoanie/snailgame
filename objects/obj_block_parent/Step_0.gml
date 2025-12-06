@@ -2,7 +2,7 @@
 var newX = self.x;
 var newY = self.y;
 
-if (isPushable && 
+if (self.isPushable && 
 	self.elevationLevel == obj_snail.elevationLevel /* && 
 		((self.bbox_top > obj_snail.bbox_bottom &&
 		 self.bbox_left < obj_snail.bbox_right) ||
