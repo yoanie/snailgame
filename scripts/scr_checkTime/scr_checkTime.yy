@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"spr_checkTime",
+  "%Name":"scr_checkTime",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"spr_checkTime",
+  "name":"scr_checkTime",
   "parent":{
     "name":"Human",
     "path":"folders/Scripts/Human.yy",

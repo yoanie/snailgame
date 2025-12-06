@@ -1,5 +1,5 @@
 ///@description Move player
-if(instance_exists(obj_menu_pause) && obj_menu_pause.menuIsUp){
+if(instance_exists(obj_menu_pause) && obj_menu_pause.menuIsUp || obj_menu_end.menuIsUp){
 	return;
 }
 switch (self.state){
@@ -41,6 +41,13 @@ var velocityVector = snugLedges(xVelocity, yVelocity, cornersX, cornersY, elevat
 //show_debug_message("new xVel: " + string(xVelocity) + ", new yVel: "+ string(yVelocity));
 var newX = self.x + velocityVector[0];
 var newY = self.y + velocityVector[1];
+
+if(velocityVector[0] == 0 && velocityVector[1] == 0) {
+	self.image_speed = 0;
+	self.image_index = 0;
+} else {
+	self.image_speed = 1;
+}
 
 while(place_meeting(newX, self.y, obj_wall_parent)) {
 	if(isRight) {
