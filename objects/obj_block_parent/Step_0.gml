@@ -17,11 +17,21 @@ if (isPushable &&
 		 ){
 		
 	show_debug_message("intersect")
-	if(place_meeting(self.bbox_left, y, obj_snail)) {
-		newX += obj_snail.moveSpeed
-	} else if(place_meeting(self.bbox_right, y, obj_snail)) {
-		newX -= obj_snail.moveSpeed
-	} else if(place_meeting(x, self.bbox_top, obj_snail)) {
+	var margin = 2
+
+	// Left side
+	if (collision_rectangle(bbox_left - margin, bbox_top, bbox_left, bbox_bottom, obj_snail, false, false)) 
+	{
+	    newX += obj_snail.moveSpeed
+	}
+
+	// Right side
+	else if (collision_rectangle(bbox_right, bbox_top, bbox_right + margin, bbox_bottom, obj_snail, false, false))
+	{
+	    newX -= obj_snail.moveSpeed
+	}
+	
+	else if(place_meeting(x, self.bbox_top, obj_snail)) {
 		newY += obj_snail.moveSpeed
 	} else if(place_meeting(x, self.bbox_bottom, obj_snail)) {
 		newY -= obj_snail.moveSpeed
