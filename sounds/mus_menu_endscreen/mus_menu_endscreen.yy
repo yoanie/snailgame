@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mus_menu_endscreen.mp3",
-  "volume":0.35,
+  "volume":0.06,
 }

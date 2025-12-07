@@ -39,7 +39,8 @@ draw_set_alpha(1);
 //draw the human arrow.
 var theta = darctan2(-obj_human.y + self.y, obj_human.x - self.x);
 var dist = self.itemReach + 16;
-draw_sprite_ext(gui_humanArrow, -1, self.x + dist*dcos(theta), self.y - dist*dsin(theta), 1, 1, theta, c_white, 0.75);
+var arrow_scale = max(0.25, min(distance_to_object(obj_human)/960, 1));
+draw_sprite_ext(gui_humanArrow, -1, self.x + dist*dcos(theta), self.y - dist*dsin(theta), arrow_scale, arrow_scale, theta, c_white, 0.75);
 
 //bbox debug
 if(showDebug){

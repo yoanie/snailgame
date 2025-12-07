@@ -1,4 +1,12 @@
-///@description FOR NOW: display time as text
+///@description Display time on sundial
+
+//draw sundial first
+draw_sprite(gui_sundialSky, -1, view_wport, 0);
+draw_sprite(gui_sundialBox, -1, view_wport, 0);
+
+percentage_through_day = self.currentTime / self.endTime;
+draw_sprite_ext(gui_sundialHand, -1, view_wport-161, 156, .30, .30, -percentage_through_day*180, c_white, 1);
+
 
 //meta minute should always be two digits to display as in real life
 var tempMetaMinute = string(metaTimeMinutes);
@@ -27,8 +35,8 @@ if(self.AMPM){
 	}
 }
 
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_set_font(fnt_debug);
-draw_set_colour(c_white);
-draw_text(0,0, "Time: " + tempMetaHour + ":" + tempMetaMinute);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_font(fnt_sundial);
+draw_set_colour(c_black);
+draw_text(view_wport-165, 204, "Time: " + tempMetaHour + ":" + tempMetaMinute);
