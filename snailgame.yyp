@@ -52,6 +52,7 @@
     {"$GMFolder":"","%Name":"Main_Game","folderPath":"folders/Rooms/Main_Game.yy","name":"Main_Game","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Testing","folderPath":"folders/Rooms/Testing.yy","name":"Testing","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Day Night Shader","folderPath":"folders/Scripts/Day Night Shader.yy","name":"Day Night Shader","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Human","folderPath":"folders/Scripts/Human.yy","name":"Human","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Movement","folderPath":"folders/Scripts/Movement.yy","name":"Movement","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Outline Shader","folderPath":"folders/Scripts/Outline Shader.yy","name":"Outline Shader","resourceType":"GMFolder","resourceVersion":"2.0",},
