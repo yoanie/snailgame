@@ -360,6 +360,7 @@
     {"id":{"name":"spr_tutorial_background","path":"sprites/spr_tutorial_background/spr_tutorial_background.yy",},},
     {"id":{"name":"spr_tutorial","path":"sprites/spr_tutorial/spr_tutorial.yy",},},
     {"id":{"name":"spr_tv","path":"sprites/spr_tv/spr_tv.yy",},},
+    {"id":{"name":"spr_usedAirPurifier","path":"sprites/spr_usedAirPurifier/spr_usedAirPurifier.yy",},},
     {"id":{"name":"spr_wall01_Bottom","path":"sprites/spr_wall01_Bottom/spr_wall01_Bottom.yy",},},
     {"id":{"name":"spr_wall01_Middle","path":"sprites/spr_wall01_Middle/spr_wall01_Middle.yy",},},
     {"id":{"name":"spr_wall01_Top","path":"sprites/spr_wall01_Top/spr_wall01_Top.yy",},},

@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_usedAirPurifier",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_usedAirPurifier",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_airPurifier",
-    "path":"sprites/spr_airPurifier/spr_airPurifier.yy",
+    "name":"spr_usedAirPurifier",
+    "path":"sprites/spr_usedAirPurifier/spr_usedAirPurifier.yy",
   },
   "spriteMaskId":null,
   "visible":true,

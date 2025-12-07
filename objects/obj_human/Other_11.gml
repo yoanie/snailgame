@@ -41,5 +41,11 @@ switch (self.hitboxTouchingId){
 		audio_play_sound(sfx_bearTrap, 15, -1);
 		event_user(2);
 		break;
+	case -62: //poison gas from used air purifier
+		self.poisonProgression += game_get_speed(gamespeed_fps);
+		if(self.poisonProgression >= 10){
+			event_user(2);
+		}
+		break;
 
 }
