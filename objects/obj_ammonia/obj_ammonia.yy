@@ -10,6 +10,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"item_combines_with","path":"objects/obj_item_parent/obj_item_parent.yy",},"resource":{"name":"obj_bleach","path":"objects/obj_bleach/obj_bleach.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_bleach",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"item_combines_with_name","path":"objects/obj_item_parent/obj_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bleach",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"item_combines_into","path":"objects/obj_item_parent/obj_item_parent.yy",},"resource":{"name":"obj_gasMix","path":"objects/obj_gasMix/obj_gasMix.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_gasMix",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_parent","path":"objects/obj_item_parent/obj_item_parent.yy",},"propertyId":{"name":"description","path":"objects/obj_item_parent/obj_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Smells like a dangerous chemical.\\nHow did they even buy this?!",},
   ],
   "parent":{
     "name":"Items",

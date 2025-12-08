@@ -108,6 +108,7 @@
   "name":"snailgame",
   "resources":[
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
+    {"id":{"name":"fnt_itemDesc","path":"fonts/fnt_itemDesc/fnt_itemDesc.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_sundial","path":"fonts/fnt_sundial/fnt_sundial.yy",},},
     {"id":{"name":"fnt_tooltip","path":"fonts/fnt_tooltip/fnt_tooltip.yy",},},

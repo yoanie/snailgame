@@ -1,4 +1,4 @@
-///@description Draw Inventory Wheel and Slots
+///@description Draw Inventory Wheel and Slots and Description
 
 if(obj_menu_pause.menuIsUp || obj_menu_end.menuIsUp) {
 	return;
@@ -28,4 +28,22 @@ for(var i = 0; i<4; i++){
 	if(itemObj != pointer_null){
 		draw_sprite_ext(itemObj.sprite_index, -1, center[0] - 120*dcos(newAngle), center[1] + 120*dsin(newAngle), sizeFactor, sizeFactor, 0, c_white, 1.0);
 	}
+}
+
+//item description
+var itemObj = obj_invController.inventory[obj_invController.selectedItemPointer];
+if(itemObj != pointer_null){
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_bottom);
+	draw_set_font(fnt_itemDesc);
+	draw_set_colour(c_black);
+	
+	var itemDesc = "It's a(n) "+itemObj.name+".";
+	if(itemObj.description != ""){
+		itemDesc = "\"" + itemObj.description + "\"";
+	}
+	
+	text_drop_shadow(220, view_hport-10, c_white, c_black, 
+		itemObj.name + "\n" + itemDesc,
+	-1, -1);
 }

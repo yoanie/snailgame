@@ -11,7 +11,7 @@ if (obj_snail.elevationLevel == self.elevationLevel &&
 		if(obj_invController.inventory[obj_invController.selectedItemPointer] != pointer_null &&
 			obj_invController.inventory[obj_invController.selectedItemPointer].item_combines_with_name == self.name){
 		
-			obj_cursorStateController.tooltip_right += "[Right-click] Combine "+self.name+" with "+self.item_combines_with_name+"\n";
+			obj_cursorStateController.tooltip_right += "[Right-click] Combine "+self.item_combines_with_name+" with "+self.name+"\n";
 			obj_invController.canCombineItemHere = true;
 			
 			

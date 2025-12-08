@@ -34,6 +34,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"UNKNOWN","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"description","filters":[],"listItems":[],"multiselect":false,"name":"description","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"internal_id","filters":[],"listItems":[],"multiselect":false,"name":"internal_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-999","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"canBeSwung","filters":[],"listItems":[],"multiselect":false,"name":"canBeSwung","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"tooHeavyToBePickedUp","filters":[],"listItems":[],"multiselect":false,"name":"tooHeavyToBePickedUp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
