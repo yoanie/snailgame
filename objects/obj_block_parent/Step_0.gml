@@ -16,7 +16,7 @@ if (isPushable &&
 		 */
 		 ){
 		
-	show_debug_message("intersect")
+	//show_debug_message("intersect");
 	var margin = 2
 
 	// Left side
