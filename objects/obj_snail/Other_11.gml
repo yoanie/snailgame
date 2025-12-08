@@ -14,6 +14,7 @@ show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
 
 switch (self.hitboxTouchingId){
 	case -10: //human crushing hitbox
+		obj_menu_end.end_state = 0;
 		event_user(2);
 		break;
 }
