@@ -1,6 +1,6 @@
 // Inherit the parent event
 
-image_alpha = 0.48;
+image_alpha = obj_snail.globalShowDebug ? 0.48 : 0;
 event_inherited();
 
 /*
