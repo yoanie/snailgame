@@ -13,15 +13,26 @@ if(self.menuIsUp){
 		if(!instance_exists(obj_loss_screen)) {
 			instance_create_layer(view_get_wport(0)/2, view_get_hport(0)/2, "GUI", obj_loss_screen);
 		}
+		
+		if(!instance_exists(btn_rewind)) {
+			var retryBtn = instance_create_layer(view_get_wport(0)/3, 8*view_get_hport(0)/10, "GUI", btn_rewind);
+			retryBtn.allegiantTo = self;
+		}
 	} else {
 		if(!instance_exists(obj_win_screen)) {
 			instance_create_layer(view_get_wport(0)/2, view_get_hport(0)/2, "GUI", obj_win_screen);
 		}
+		
 		draw_text_transformed(5*view_get_wport(0)/12, view_get_hport(0)/2, "You used method " + string(self.end_state) + " of 4", 2, 2, 0);
+		
+		if(!instance_exists(btn_kill_again)) {
+			var againBtn = instance_create_layer(view_get_wport(0)/3, 8*view_get_hport(0)/10, "GUI", btn_kill_again);
+			againBtn.allegiantTo = self;
+		}
 	}
 	
-	if(!instance_exists(btn_menu_quit)) {
-		var quitbtn = instance_create_layer(view_get_wport(0)/2, 8*view_get_hport(0)/10, "GUI", btn_menu_quit);
-		quitbtn.allegiantTo = self;
+	if(!instance_exists(btn_end_loop)) {
+		var endBtn = instance_create_layer(2*view_get_wport(0)/3, 8*view_get_hport(0)/10, "GUI", btn_end_loop);
+		endBtn.allegiantTo = self;
 	}
 }
