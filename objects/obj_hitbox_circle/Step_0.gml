@@ -9,7 +9,8 @@ if(gluedTo != -4){
 
 //show_debug_message(string(self.x) + ", " + string(self.y));
 
-if(instance_exists(obj_snail) && self.affectsSnail && distance_to_object(obj_snail)<=self.radius){
+if(instance_exists(obj_snail) && self.affectsSnail && 
+	point_distance(x+x_offset, y+y_offset, obj_snail.x, obj_snail.y)<=self.radius){
 	
 	obj_snail.hitboxTouching = self; //for more specific object interactions
 	obj_snail.hitboxTouchingId = self.collisionId; //for otherwise
@@ -18,7 +19,11 @@ if(instance_exists(obj_snail) && self.affectsSnail && distance_to_object(obj_sna
 	}
 }
 
-if(instance_exists(obj_human) && self.affectsHuman && distance_to_object(obj_human)<=self.radius){
+//if(self.collisionId != -10 && self.collisionId != 25 && self.collisionId != 29)
+//	show_debug_message(string(self.collisionId) + ": " + string(point_distance(x+x_offset, y+y_offset, obj_human.x, obj_human.y)) + " <= " + string(self.radius));
+
+if(instance_exists(obj_human) && self.affectsHuman && 
+	point_distance(x+x_offset, y+y_offset, obj_human.x, obj_human.y)<=self.radius){
 	//show_debug_message("hitbox is hitboxing (human)");
 	
 	obj_human.hitboxTouching = self; //for more specific object interactions

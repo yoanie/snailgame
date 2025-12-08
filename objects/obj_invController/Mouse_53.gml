@@ -9,9 +9,9 @@ if (self.canSwingItemHere){
 		var dtheta = darctan2(mouse_y-obj_snail.y, mouse_x-obj_snail.x);
 			
 		var duration = 0.3;
-		var knifesprite = instance_create_layer(obj_snail.x, obj_snail.y, 
+		var flamesprite = instance_create_layer(obj_snail.x, obj_snail.y, 
 			findLayerNameOfElevationLevel(obj_snail.elevationLevel), obj_weaponGraphic);
-		with(knifesprite){
+		with(flamesprite){
 			gluedTo = obj_snail;
 			spriteToDisplay = spr_makeshiftFlamethrower_flame;
 			spriteToDisplay_size = 1.35;
