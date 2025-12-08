@@ -5,12 +5,12 @@
 
 //the hitbox should be in charge of setting hitboxTouching
 
-show_debug_message("("+object_get_name(self.object_index)+"): ");
-show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
-
 if(self.state == -1){
 	return; //if ded can't detec
 }
+
+show_debug_message("("+object_get_name(self.object_index)+"): ");
+show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
 
 switch (self.hitboxTouchingId){
 	case -10: //human crushing hitbox

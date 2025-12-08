@@ -5,12 +5,13 @@
 
 //the hitbox should be in charge of setting hitboxTouching
 
-show_debug_message("("+object_get_name(self.object_index)+"): ");
-show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
-
 if(self.state == -1){
 	return; //if ded can't detec
 }
+
+
+show_debug_message("("+object_get_name(self.object_index)+"): ");
+show_debug_message("	colliding w/ hitbox id: " + string(self.hitboxTouchingId));
 
 switch (self.hitboxTouchingId){
 	case -8: //flamethrower flame
@@ -26,7 +27,7 @@ switch (self.hitboxTouchingId){
 			instance_destroy(self);
 		}
 		
-		alarm[0] = 6 * game_get_speed(gamespeed_fps); 
+		alarm[0] = 10 * game_get_speed(gamespeed_fps); 
 		break;
 	case 28: //knife hitbox
 		show_debug_message("hit by knife");
@@ -42,7 +43,7 @@ switch (self.hitboxTouchingId){
 		event_user(2);
 		break;
 	case -62: //poison gas from used air purifier
-		self.poisonProgression += game_get_speed(gamespeed_fps);
+		self.poisonProgression += 1/game_get_speed(gamespeed_fps);
 		if(self.poisonProgression >= 10){
 			event_user(2);
 		}
