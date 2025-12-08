@@ -45,6 +45,7 @@ switch (self.hitboxTouchingId){
 	case -62: //poison gas from used air purifier
 		self.poisonProgression += 1/game_get_speed(gamespeed_fps);
 		if(self.poisonProgression >= 10){
+			obj_menu_end.end_state = 4;
 			event_user(2);
 		}
 		break;

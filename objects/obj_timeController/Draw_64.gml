@@ -1,5 +1,9 @@
 ///@description Display time on sundial
 
+if(obj_menu_pause.menuIsUp || obj_menu_end.menuIsUp) {
+	return;
+}
+
 //draw sundial first
 draw_sprite(gui_sundialSky, -1, view_wport, 0);
 draw_sprite(gui_sundialBox, -1, view_wport, 0);

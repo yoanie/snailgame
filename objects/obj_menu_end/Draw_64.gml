@@ -17,7 +17,7 @@ if(self.menuIsUp){
 		if(!instance_exists(obj_win_screen)) {
 			instance_create_layer(view_get_wport(0)/2, view_get_hport(0)/2, "GUI", obj_win_screen);
 		}
-		draw_text_transformed(5*view_get_wport(0)/12, view_get_hport(0)/2, "You used method " + string(self.end_state) + " of 3", 2, 2, 0);
+		draw_text_transformed(5*view_get_wport(0)/12, view_get_hport(0)/2, "You used method " + string(self.end_state) + " of 4", 2, 2, 0);
 	}
 	
 	if(!instance_exists(btn_menu_quit)) {
