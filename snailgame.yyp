@@ -42,7 +42,6 @@
     {"$GMFolder":"","%Name":"LivingRoom","folderPath":"folders/Objects/Nodes/LivingRoom.yy","name":"LivingRoom","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Outside","folderPath":"folders/Objects/Nodes/Outside.yy","name":"Outside","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Storage","folderPath":"folders/Objects/Nodes/Storage.yy","name":"Storage","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Objects/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Snails","folderPath":"folders/Objects/Snails.yy","name":"Snails","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Temp","folderPath":"folders/Objects/Temp.yy","name":"Temp","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tutorial","folderPath":"folders/Objects/Tutorial.yy","name":"Tutorial","resourceType":"GMFolder","resourceVersion":"2.0",},
