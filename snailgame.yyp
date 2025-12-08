@@ -324,6 +324,8 @@
     {"id":{"name":"spr_human_daze","path":"sprites/spr_human_daze/spr_human_daze.yy",},},
     {"id":{"name":"spr_human_front_a","path":"sprites/spr_human_front_a/spr_human_front_a.yy",},},
     {"id":{"name":"spr_human_front_s","path":"sprites/spr_human_front_s/spr_human_front_s.yy",},},
+    {"id":{"name":"spr_human_left_a","path":"sprites/spr_human_left_a/spr_human_left_a.yy",},},
+    {"id":{"name":"spr_human_left_s","path":"sprites/spr_human_left_s/spr_human_left_s.yy",},},
     {"id":{"name":"spr_human_perish","path":"sprites/spr_human_perish/spr_human_perish.yy",},},
     {"id":{"name":"spr_human_side_a","path":"sprites/spr_human_side_a/spr_human_side_a.yy",},},
     {"id":{"name":"spr_human_side_s","path":"sprites/spr_human_side_s/spr_human_side_s.yy",},},
