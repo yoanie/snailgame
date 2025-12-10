@@ -4,7 +4,7 @@ if(obj_snail.state == -1 || obj_menuController.globalMenuIsUp == true ){
 	return;
 }
 
-if(self.canSwingItemHere  && self.inventory[self.selectedItemPointer] != pointer_nulls){
+if(self.canSwingItemHere  && self.inventory[self.selectedItemPointer] != pointer_null){
 	obj_cursorStateController.tooltip_left += "[Left-click] Use "+self.inventory[self.selectedItemPointer].name+"\n";
 }
 
